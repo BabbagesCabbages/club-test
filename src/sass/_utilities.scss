@@ -1,0 +1,133 @@
+//
+// Utilities
+// --------------------------------------------------
+
+// Floats
+.pull-right { float: right; }
+.pull-left { float: left; }
+
+// Toggling
+.hide, .hidden { display: none; }
+.show { display: block; }
+
+// Visibility
+.invisible { visibility: hidden; }
+.visible { visibility: visible; }
+
+// Clearing floats
+.clearfix { @include clearfix; }
+
+// Accessible yet invisible text
+.hide-text { @include hide-text; }
+
+// No pointer events
+.no-pointer-events { pointer-events: none; }
+.margin-bottom-0 {
+  margin-bottom: 0!important;
+}
+
+.background-pink {
+background: #c98fbb; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #c98fbb 0%, #dd307b 47%, #dd307b 82%, #db36a4 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #c98fbb 0%,#dd307b 47%,#dd307b 82%,#db36a4 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #c98fbb 0%,#dd307b 47%,#dd307b 82%,#db36a4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c98fbb', endColorstr='#db36a4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.background-purple {
+  background: #753fb7;
+background: -moz-linear-gradient(-45deg, #753fb7 22%, #5e3ab3 62%, #3832a9 99%);
+background: -webkit-linear-gradient(-45deg, #753fb7 22%,#5e3ab3 62%,#3832a9 99%);
+background: linear-gradient(165deg, #753fb7 22%,#5e3ab3 62%,#3832a9 99%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#753fb7', endColorstr='#3832a9',GradientType=1 );
+}
+.background-green {
+background: #e4efc0; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #e4efc0 0%, #abbd73 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #e4efc0 0%,#abbd73 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #e4efc0 0%,#abbd73 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4efc0', endColorstr='#abbd73',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.background-nav-blue {
+background: #1d3063; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #1d5d7b 0%, #1d3063 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #1d5d7b 0%,#1d3063 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #1d5d7b 0%,#1d3063 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.background-dark-blue {
+  background: $dark-blue;
+  &.side-nav {
+    border-top: 10px solid $light-blue;
+  }
+}
+
+.background-gray {
+  background: $nav-gray;
+}
+.pink-text {
+  color: $pink!important;
+}
+.nav-gray {
+  color: $nav-gray;
+}
+.number-gray {
+  color: $number-gray;
+}
+.spacer {
+  height:8em;
+}
+.spacer2 {
+  margin-bottom: -4em;
+}
+.no-pad {
+  padding: 0;
+}
+
+html.magnifying > body {
+  overflow-x: hidden !important;
+}
+.magnify {
+  position: relative;
+  display: inline-block;
+}
+.magnify .magnify-lens {
+  /* Create the magnifying lens */
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  /* Multiple box shadows to achieve the glass lens effect */
+  -webkit-box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85),
+    0 0 7px 7px rgba(0, 0, 0, 0.25),
+    inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85),
+    0 0 7px 7px rgba(0, 0, 0, 0.25),
+    inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+  /* Hide the mouse pointer */
+  cursor: none;
+  /* Hide the lens by default */
+  display: none;
+  /* Place the lens on top of other elements */
+  z-index: 100;
+}
+.magnify .magnify-lens.loading {
+  background: #333 !important;
+  opacity: 0.75;
+}
+.magnify .magnify-lens.loading:after {
+  /* Loading text */
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  content: 'Loading...';
+  font: italic normal 16px/1 Calibri, sans-serif;
+  text-align: center;
+  text-shadow: 0 0 2px rgba(51, 51, 51, 0.8);
+  text-transform: none;
+}
+
+#modalIncorrect1, #modalIncorrect2,#modalIncorrect3 {
+  display:none;
+}
