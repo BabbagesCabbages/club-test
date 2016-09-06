@@ -1,6 +1,5 @@
 var BaseView = require('../../BaseView');
-var template = require('templates/patient1/patient1View9.hbs');
-var Magnify = require('magnify');
+var template = require('templates/patient1/patient1View7-3.hbs');
 
 module.exports = BaseView.extend({
 
@@ -22,12 +21,7 @@ module.exports = BaseView.extend({
 
     onBeforeShow: function() {},
 
-    onShow: function() {
-      $('.magnify').magnify({
-        speed: 200,
-        src: 'images/HE_Invasive.jpg'
-      });
-    },
+    onShow: function() {},
 
     onBeforeDestroy: function() {},
 

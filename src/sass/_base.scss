@@ -134,7 +134,7 @@ main {
 figure {
   text-align:center;
   margin-bottom:1em;
-  img {
+  img:not(.one-hun) {
     width:90%;
   }
 }
@@ -233,6 +233,18 @@ border-left: 3px solid white;
         right: 0;
         width: 100%;
         margin-bottom: 0em;
+        &.patient1 {
+          outline: rgba(221,48,123,.7) inset 15px;
+          outline-offset: -15px;
+        }
+        &.patient2 {
+          outline: rgba(118,23,179,.7) inset 15px;
+          outline-offset: -15px;
+        }
+        &.patient3 {
+          outline: rgba(44,167,117, .7) inset 15px;
+          outline-offset: -15px;
+        }
       }
     }
     .up-next {
@@ -287,7 +299,7 @@ border-left: 3px solid white;
   .patient-copy {
     background-color:white;
     min-height: 286px;
-    max-height: 286px;
+    max-height: 286pside-x;
     width: 100%;
     margin:0;
     p {
@@ -313,7 +325,7 @@ border-left: 3px solid white;
   a {
     margin-top: 112px;
     position: relative;
-    top: 40px;
+    top: 30px;
     left: 14px;
     color: white;
     &:hover {
@@ -354,7 +366,7 @@ top: -4px;
 }
 .side-nav {
   color:white;
-  box-shadow: black 1px 1px 1px;
+  box-shadow: gray 1px 1px 15px;
   top: 41px;
   position: relative;
   max-width: 295px;

@@ -14,6 +14,8 @@ var Patient1View4 = require('views/patient1/mammograms/Patient1View4');
 var Patient1View5 = require('views/patient1/mammograms/Patient1View5');
 var Patient1View6 = require('views/patient1/biopsy/Patient1View6');
 var Patient1View7 = require('views/patient1/biopsy/Patient1View7');
+var Patient1View7_2 = require('views/patient1/biopsy/Patient1View7-2');
+var Patient1View7_3 = require('views/patient1/biopsy/Patient1View7-3');
 var Patient1View8 = require('views/patient1/biopsy/Patient1View8');
 var Patient1View9 = require('views/patient1/biopsy/Patient1View9');
 var Patient1View10 = require('views/patient1/biopsy/Patient1View10');
@@ -122,6 +124,14 @@ module.exports = Marionette.Controller.extend({
     patient1view7: function() {
       var patient1View7 = new Patient1View7();
       app.rootView.regionMain.show(patient1View7);
+    },
+    patient1view7_2: function() {
+      var patient1View7_2 = new Patient1View7_2();
+      app.rootView.regionMain.show(patient1View7_2);
+    },
+    patient1view7_3: function() {
+      var patient1View7_3 = new Patient1View7_3();
+      app.rootView.regionMain.show(patient1View7_3);
     },
     patient1view8: function() {
       var patient1View8 = new Patient1View8();
