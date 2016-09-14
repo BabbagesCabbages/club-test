@@ -366,7 +366,7 @@ top: -4px;
 }
 .side-nav {
   color:white;
-  box-shadow: gray 1px 1px 15px;
+    box-shadow: gray 1px 1px 15px;
   top: 41px;
   position: relative;
   max-width: 295px;
@@ -807,6 +807,11 @@ main.patient-2.top-gray {
 
   }
 }
+
+.select {
+  position: relative;
+  top: -15px;
+}
 .continue:not(.next) {
   position: relative;
   color: white;
@@ -814,6 +819,7 @@ main.patient-2.top-gray {
     letter-spacing: 4px;
     font-size: 17px;
     text-transform: uppercase;
+
   }
   &:hover {
     color:white;
@@ -1022,6 +1028,9 @@ iframe {
 }
 .steps-13 {
   height: 338px!important;
+}
+.next-test:after {
+  right: -34px!important;
 }
 
 .overlay-pink {

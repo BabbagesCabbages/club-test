@@ -30,6 +30,9 @@ module.exports = BaseView.extend({
     },
 
     onDestroy: function() {
+      $('#myModal').modal('hide');
+      $('body').removeClass('modal-open');
+      $('.modal-backdrop').remove();
     }
 
 });
