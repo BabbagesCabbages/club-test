@@ -1,5 +1,5 @@
 var BaseView = require('../BaseView');
-var template = require('templates/patient2/patient2view6.hbs');
+var template = require('templates/patient3/patient3view2.hbs');
 
 module.exports = BaseView.extend({
 
@@ -8,7 +8,8 @@ module.exports = BaseView.extend({
     template: template,
     ui: {},
     events: {
-        'click .continue': 'scrollTop'
+        'click .continue': 'scrollTop',
+        "click .correct": "handleClick",
     },
 
     initialize: function() {
@@ -25,8 +26,14 @@ module.exports = BaseView.extend({
 
     onBeforeDestroy: function() {},
 
+    handleClick: function() {
+      $('path.circle').fadeIn('fast');
+    },
     scrollTop: function(){
     	$('body').animate({ scrollTop: '0' }, 400);
+    },
+    nextPage: function() {
+
     },
 
     onDestroy: function() {

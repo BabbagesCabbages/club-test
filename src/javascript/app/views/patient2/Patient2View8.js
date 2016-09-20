@@ -1,5 +1,5 @@
 var BaseView = require('../BaseView');
-var template = require('templates/patient2/patient2view6.hbs');
+var template = require('templates/patient2/patient2view8.hbs');
 
 module.exports = BaseView.extend({
 
@@ -21,7 +21,12 @@ module.exports = BaseView.extend({
 
     onBeforeShow: function() {},
 
-    onShow: function() {},
+    onShow: function() {
+      $('.magnify').magnify({
+        speed: 200,
+        src: 'images/BenignBreast_NORMAL.jpg'
+      });
+    },
 
     onBeforeDestroy: function() {},
 

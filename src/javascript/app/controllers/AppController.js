@@ -43,6 +43,24 @@ var Patient2View4 = require('views/patient2/Patient2View4');
 var Patient2View5 = require('views/patient2/Patient2View5');
 var Patient2View6 = require('views/patient2/Patient2View6');
 var Patient2View7 = require('views/patient2/Patient2View7');
+var Patient2View8 = require('views/patient2/Patient2View8');
+var Patient2View9 = require('views/patient2/Patient2View9');
+var Patient2View10 = require('views/patient2/Patient2View10');
+var Patient2View11 = require('views/patient2/Patient2View11');
+var Patient2View12 = require('views/patient2/Patient2View12');
+var StartView3 = require('views/StartView3');
+var Patient3View1 = require('views/patient3/Patient3View1');
+var Patient3View2 = require('views/patient3/Patient3View2');
+var Patient3View3 = require('views/patient3/Patient3View3');
+var Patient3View4 = require('views/patient3/Patient3View4');
+var Patient3View5 = require('views/patient3/Patient3View5');
+var Patient3View6 = require('views/patient3/Patient3View6');
+var Patient3View7 = require('views/patient3/Patient3View7');
+var Patient3View8 = require('views/patient3/Patient3View8');
+var Patient3View9 = require('views/patient3/Patient3View9');
+var Patient3View10 = require('views/patient3/Patient3View10');
+var Patient3View11 = require('views/patient3/Patient3View11');
+var Patient3View12 = require('views/patient3/Patient3View12');
 var SvgTest = require('views/svg-test');
 
 
@@ -237,9 +255,81 @@ module.exports = Marionette.Controller.extend({
       var patient2View7 = new Patient2View7();
       app.rootView.regionMain.show(patient2View7);
     },
+    patient2view8: function() {
+      var patient2View8 = new Patient2View8();
+      app.rootView.regionMain.show(patient2View8);
+    },
+    patient2view9: function() {
+      var patient2View9 = new Patient2View9();
+      app.rootView.regionMain.show(patient2View9);
+    },
+    patient2view10: function() {
+      var patient2View10 = new Patient2View10();
+      app.rootView.regionMain.show(patient2View10);
+    },
+    patient2view11: function() {
+      var patient2View11 = new Patient2View11();
+      app.rootView.regionMain.show(patient2View11);
+    },
+    patient2view12: function() {
+      var patient2View12 = new Patient2View12();
+      app.rootView.regionMain.show(patient2View12);
+    },
+    startview3: function() {
+      var startView3 = new StartView3();
+      app.rootView.regionMain.show(startView3);
+    },
+    patient3view1: function() {
+      var patient3View1 = new Patient3View1();
+      app.rootView.regionMain.show(patient3View1);
+    },
+    patient3view2: function() {
+      var patient3View2 = new Patient3View2();
+      app.rootView.regionMain.show(patient3View2);
+    },
+    patient3view3: function() {
+      var patient3View3 = new Patient3View3();
+      app.rootView.regionMain.show(patient3View3);
+    },
+    patient3view4: function() {
+      var patient3View4 = new Patient3View4();
+      app.rootView.regionMain.show(patient3View4);
+    },
+    patient3view5: function() {
+      var patient3View5 = new Patient3View5();
+      app.rootView.regionMain.show(patient3View5);
+    },
+    patient3view6: function() {
+      var patient3View6 = new Patient3View6();
+      app.rootView.regionMain.show(patient3View6);
+    },
+    patient3view7: function() {
+      var patient3View7 = new Patient3View7();
+      app.rootView.regionMain.show(patient3View7);
+    },
+    patient3view8: function() {
+      var patient3View8 = new Patient3View8();
+      app.rootView.regionMain.show(patient3View8);
+    },
+    patient3view9: function() {
+      var patient3View9 = new Patient3View9();
+      app.rootView.regionMain.show(patient3View9);
+    },
+    patient3view10: function() {
+      var patient3View10 = new Patient3View10();
+      app.rootView.regionMain.show(patient3View10);
+    },
+    patient3view11: function() {
+      var patient3View11 = new Patient3View11();
+      app.rootView.regionMain.show(patient3View11);
+    },
+    patient3view12: function() {
+      var patient3View12 = new Patient3View12();
+      app.rootView.regionMain.show(patient3View12);
+    },
 
     defaultHandler: function (route) {
-        console.log('%cRoute /%s does not exist', 'color:white; background:gray; padding: 0 0.25em', route);
+        console.log('%cRoute /%s does not exist', 'color:white; background:gray; padding: 0 0.35em', route);
     }
 
 });

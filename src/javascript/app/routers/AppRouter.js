@@ -42,15 +42,28 @@ module.exports = Marionette.AppRouter.extend({
         'patient2view5': 'patient2view5',
         'patient2view6': 'patient2view6',
         'patient2view7': 'patient2view7',
+        'patient2view8': 'patient2view8',
+        'patient2view9': 'patient2view9',
+        'patient2view10': 'patient2view10',
+        'patient2view11': 'patient2view11',
+        'patient2view12': 'patient2view12',
+        'startview3': 'startview3',
+        'patient3view1': 'patient3view1',
+        'patient3view2': 'patient3view2',
+        'patient3view3': 'patient3view3',
+        'patient3view4': 'patient3view4',
+        'patient3view5': 'patient3view5',
+        'patient3view6': 'patient3view6',
+        'patient3view7': 'patient3view7',
+        'patient3view8': 'patient3view8',
+        'patient3view9': 'patient3view9',
+        'patient3view10': 'patient3view10',
+        'patient3view11': 'patient3view11',
+        'patient3view12': 'patient3view12',
         'svgTest': 'svgtest',
         '*default': 'defaultHandler'
     },
 
-
-    // Patient 1 / Mammograms: 5 slides
-    // Patient 1 / Biopsy: 5 slides + Quiz
-    // Patient 1 / Gene Expression: 13 slides + Quiz
-    // Patient 1 / Conclusions: 4 slides
 
 
     controller: new AppController()

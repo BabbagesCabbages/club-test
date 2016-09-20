@@ -1,4 +1,4 @@
- <div class="spacer2"></div>
+<div class="spacer2"></div>
 <div class="row">
   <div class="col-md-3 no-pad">
     <div id="side-navs-fixed">
@@ -9,7 +9,7 @@
           <li>Michele Johnson</li>
         </ul>
         <div class="row next-steps p-2-steps">
-          <ul class="background-purple">
+        <ul class="background-purple">
             <li><span></span></li>
             <li class="border-bottom"><span><img src="images/icon_biopsy_on.png" alt="" /></span>Biopsy</li>
           </ul>
@@ -40,41 +40,61 @@
   </div>
   <div class="col-md-6 col-md-offset-1 top-quote">
     <blockquote>
-The pathologist examined Michele’s tissue and has provided a pathology report.
+Use the notes from your Lab Handbook to recommend a personalized treatment plan for Michele Johnson.
     </blockquote>
     <main id="content-main" class="row patient-2">
 
-      <div class="header-gray">
-        <div class="col-md-3">
-          <img src="images/magnify_glass_icon.png" alt="magnifying glass icon" />
-        </div>
-        <div class="col-md-9">
-          <h4><b>Patient Overview</b>
-            Here is important information about Michele’s tissue sample.  Be sure to record it in your Lab Handbook.</h4>
+      <p>Select one of the following options and review your patient’s progress:
 
-        </div>
-      </div>
-      <p>
-        <ul class="specs">
-          <li><strong>Final Diagnosis: </strong>   Infiltrating ductal carcinoma</li>
-          <li><strong>Histological Grade:</strong> 3</li>
-          <li><strong>Stage:</strong>1</li>
-          <li><strong>Number of nodes examined:</strong>2</li>
-          <li><strong>Number of positive nodes:</strong>0</li>
 
-        </ul>
-      </p>
-
+</p>
+<strong>TO-DO MULTIPLE CHOICE</strong>
+<p>
+Hormone blocking therapy only<br>
+ Chemotherapy followed by hormone blocking therapy<br>
+ HER2-targeted therapy and chemotherapy<br>
+ Hormone blocking therapy, HER2-targeted therapy, and chemotherapy<br>
+</p>
+<p>
+Student makes selection.  Feedback given.
+</p>
+         <!-- <figure class="m-bottom">
+           <img src="images/patient2slide1.png" alt="" />
+           <figcaption>
+             This is a caption. Lorem ipsum dolor sin sit amet consectutor
+           </figcaption>
+         </figure> -->
          <div class="row continue-container background-nav-blue">
              <div class="col-md-12 no-pad text-center">
                <div class="col-md-4">
-                 <a data-navigate="patient2view5" class="previous"><button class="" type="button" name="button">Previous</button></a>
+
+
+                 <!-- Button trigger modal -->
+                 <a class="previous"><button class="select" type="button"data-toggle="modal" data-target="#myModal" >Select Treatment</button></a>
+
+
+
+                 <!-- Modal -->
+                 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                   <div class="modal-dialog" role="document">
+                     <div class="modal-content">
+                       <div class="modal-body">
+                       <h2>Select Treatment:  You do not have enough information to select treatment for your patient.  Please continue to next test.</h2>
+                       </div>
+                       <div class="modal-footer background-nav-blue">
+                          <a data-navigate="startview3"><button  name="button">Next &#8594;</button></a>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+
+
                </div>
                <div class="col-md-4 line-across">
 
                </div>
                <div class="col-md-4">
-                 <a data-navigate="patient2view7" class="continue next"><button type="button" name="button">Next &#8594;</button></a>
+                 <a data-navigate="startview3" class="continue next next-test"><button type="button"class="next-test" name="button">Next Test &#8594;</button></a>
                </div>
              </div>
          </div>

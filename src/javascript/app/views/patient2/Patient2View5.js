@@ -21,7 +21,12 @@ module.exports = BaseView.extend({
 
     onBeforeShow: function() {},
 
-    onShow: function() {},
+    onShow: function() {
+      $('.magnify').magnify({
+        speed: 200,
+        src: 'images/BenignBreast_NORMAL.jpg'
+      });
+    },
 
     onBeforeDestroy: function() {},
 
@@ -30,6 +35,9 @@ module.exports = BaseView.extend({
     },
 
     onDestroy: function() {
+      $('#myModal').modal('hide');
+      $('body').removeClass('modal-open');
+      $('.modal-backdrop').remove();
     }
 
 });

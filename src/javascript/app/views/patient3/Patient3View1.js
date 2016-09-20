@@ -1,5 +1,5 @@
 var BaseView = require('../BaseView');
-var template = require('templates/patient2/patient2view6.hbs');
+var template = require('templates/patient3/patient3view1.hbs');
 
 module.exports = BaseView.extend({
 
@@ -30,9 +30,6 @@ module.exports = BaseView.extend({
     },
 
     onDestroy: function() {
-      $('#myModal').modal('hide');
-      $('body').removeClass('modal-open');
-      $('.modal-backdrop').remove();
     }
 
 });
