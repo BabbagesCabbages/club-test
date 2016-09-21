@@ -171,8 +171,11 @@ border-left: 3px solid white;
 }
 
 .top-quote blockquote {
-    margin: 0em 3em 2em 1em;
+    margin: 0em 0em 2em 1em;
         font-weight: bold;
+}
+.modal.in .modal-dialog {
+    transform: translate(6em, 10em);
 }
 .svg-text {
   background-color: rgba(221, 48, 123, 0.8);
