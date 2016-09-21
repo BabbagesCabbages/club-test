@@ -160,7 +160,23 @@ border-left: 3px solid white;
 }
 
 .modal.in .modal-dialog {
-    transform: translate(0px, 10em);
+    transform: translate(4vw, 10em);
+
+}
+@media only screen and (min-width:1200px) and (max-width: 1400px) {
+.modal.in .modal-dialog {
+    transform: translate(7vw, 10em);
+  }
+}
+@media only screen and (min-width:1100px) and (max-width: 1199px) {
+.modal.in .modal-dialog {
+    transform: translate(9vw, 10em);
+  }
+}
+@media only screen and (min-width:1000px) and (max-width: 1099px) {
+.modal.in .modal-dialog {
+    transform: translate(12vw, 10em);
+  }
 }
 .modal-body {
   border-top: 10px solid $pink;
@@ -173,9 +189,6 @@ border-left: 3px solid white;
 .top-quote blockquote {
     margin: 0em 0em 2em 1em;
         font-weight: bold;
-}
-.modal.in .modal-dialog {
-    transform: translate(6em, 10em);
 }
 .svg-text {
   background-color: rgba(221, 48, 123, 0.8);
