@@ -24,11 +24,11 @@
           </ul>
           <ul>
             <li><span>No.03</span></li>
-            <li class="border-bottom">Gene Expression</li> <!-- TODO - MAKE THIS TIED TO COLLECTION -->
+            <li class="border-bottom">Molecular Testing</li> <!-- TODO - MAKE THIS TIED TO COLLECTION -->
           </ul>
           <ul>
             <li><span>No.04</span></li>
-            <li>Conclusions</li> <!-- TODO - MAKE THIS TIED TO COLLECTION -->
+            <li>Treatment Recommendations</li> <!-- TODO - MAKE THIS TIED TO COLLECTION -->
           </ul>
         </div>
       </nav>
@@ -48,10 +48,13 @@
       <figure>
         <img src="images/p1screen3.png" alt="" />
       </figure>
+      <p>
+        Select the object that is closet to the size of the abnormality.
+      </p>
 
 <svg version="1.1" id="pick-a-size" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="100%" height="100%" viewBox="-14 283 639 225" enable-background="new -14 283 639 225" xml:space="preserve">
-<image overflow="visible" enable-background="new    " width="639" height="225" xlink:href="images/pick-a-size.png"  transform="matrix(1 0 0 1 -14 283)">
+<image overflow="visible" enable-background="new" width="639" height="225" xlink:href="images/pick-a-size.png"  transform="matrix(1 0 0 1 -14 283)">
 </image>
 <polyline class="size-1" fill="transparent"  points="78.25,442 83.75,440.75 88.25,436 89.5,432 89.5,426.75 86,422.25 81.75,420 76.25,420 70.75,420
 	68,425.5 66.25,429.75 66.25,434.75 70.75,438.25 "/>
@@ -108,13 +111,13 @@
       <div class="col-md-4 line-across"></div>
       <div class="col-md-4">
         <!-- Button trigger modal -->
-        <a class="continue next"><button type="button"data-toggle="modal" data-target="#myModal"  name="button">Next &#8594;</button></a>
+        <a class="continue next"><button type="button muted"data-toggle="modal" data-target="#myModal"  name="button">Next &#8594;</button></a>
         <!-- Modal -->
         <div class="modal fade" id="modalCorrect" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-body">
-                <h2>Correct! The area you clicked on indicates abnormal breast tissue.</h2>
+                <h2>Correct! Yes, it is about the size of a walnut.</h2>
               </div>
               <div class="modal-footer background-nav-blue">
                 <a href="/patient1view6" data-navigate="patient1view6" class="continue"><button id="next-page" type="button" data-dismiss="modal" name="button">Next &#8594;</button></a>
@@ -126,7 +129,7 @@
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-body">
-                <h2>Incorrect! The area you clicked on doesn't indicates abnormal breast tissue.</h2>
+                <h2>Incorrect! Please try again.</h2>
               </div>
               <div class="modal-footer background-nav-blue">
                 <a class="continue close-modal"><button id="next-page" type="button" data-dismiss="modal" name="button">Next &#8594;</button></a>
@@ -138,7 +141,7 @@
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-body">
-                <h2>Incorrect! The area you clicked on doesn't indicates abnormal breast tissue.</h2>
+                <h2>Incorrect! Please try again.</h2>
               </div>
               <div class="modal-footer background-nav-blue">
                 <a class="continue close-modal"><button id="next-page" type="button" data-dismiss="modal" name="button">Next &#8594;</button></a>
@@ -150,10 +153,10 @@
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-body">
-                <h2>Incorrect! The area you clicked on doesn't indicates abnormal breast tissue.</h2>
+                <h2>Incorrect! Please try again.</h2>
               </div>
               <div class="modal-footer background-nav-blue">
-                <a class="continue close-modal"><button id="next-page" type="button" data-dismiss="modal" name="button">Next &#8594;</button></a>
+                <a class="continue close-modal"><button class="muted" id="next-page" type="button" data-dismiss="modal" name="button">Next &#8594;</button></a>
               </div>
             </div>
           </div>

@@ -62,10 +62,14 @@ path {
 #side-navs-fixed {
       margin-right: 10px;
 }
-
+.modal-body {
+  letter-spacing: 0px;
+  padding: 0 1em;
+}
 main {
   background-color: white;
   padding: 2em;
+  padding-top:0;
   padding-left: 2em!important;
   padding-right: 1em!important;
   margin-left: 1%;
@@ -77,6 +81,7 @@ main {
   }
   figure {
     position:relative;
+    padding: 0 1em;
     figcaption {
       position: absolute;
       bottom: 0px;
@@ -95,11 +100,15 @@ main {
     min-width: 606px;
     max-width: 606px;
     p {
-      padding: 0em 1em 2em 2em;
+      padding: 2em 1em 0em 2em;
       text-transform: initial;
+      margin:0;
+      margin-bottom:2em;
     }
     h2 {
       margin-left: 1.4em;
+      padding-top: 1em;
+      padding-bottom: 1em;
     }
     figcaption {
       background-color: $pink;
@@ -136,6 +145,7 @@ figure {
   margin-bottom:1em;
   img:not(.one-hun) {
     width:90%;
+    padding-top:1em;
   }
 }
 .side-nav img:not(.hotspot) {
@@ -159,7 +169,7 @@ border-left: 3px solid white;
 
 
 .top-quote blockquote {
-    margin: 0em 1em 2em 1em;
+    margin: 0em 3em 2em 1em;
         font-weight: bold;
 }
 .svg-text {
@@ -314,7 +324,9 @@ border-left: 3px solid white;
 .patient-1 {
   margin-bottom: 4em;
 }
-
+.magnify {
+  padding:0!important;
+}
 .left-arrow {
   position: absolute;
   top: 0;
@@ -328,6 +340,7 @@ border-left: 3px solid white;
     top: 30px;
     left: 14px;
     color: white;
+    cursor:pointer;
     &:hover {
       text-decoration:none;
     }
@@ -845,8 +858,16 @@ main.patient-2.top-gray {
   top: 14px;
 }
 .col-md-2.yes-no {
-      background: linear-gradient(135deg, #1d5d7b 0%, #1d3063 100%);
       border-radius: 5px;
+      text-align: center;
+      text-transform:uppercase;
+      line-height: 40px;
+      letter-spacing:5px;
+      background-color: #cbdbe3;
+      &:nth-child(2) {
+        background: linear-gradient(135deg, #1d5d7b 0%, #1d3063 100%);
+
+      }
       a {
         color: white;
 
@@ -948,7 +969,7 @@ main.patient-2.top-gray {
 }
 .cancer {
   fill: transparent;
-  stroke: white;
+
 }
 .cancer:hover {
   fill: white;
@@ -1042,4 +1063,8 @@ iframe {
   bottom: 0;
   z-index: 999999;
   left: 0;
+}
+
+.margin-bottom {
+  margin-bottom:2em;
 }

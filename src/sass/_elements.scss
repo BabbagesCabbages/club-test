@@ -39,8 +39,7 @@ blockquote {
           span {
             background-color: $light-blue;
             &.pink-hl {
-              background-color: $pink;
-
+              background-color: rgba(221,48,123,.4);
             }
           }
 }
@@ -50,5 +49,4 @@ blockquote {
 }
 .purple-hl {
   background-color: $light-purple;
-
 }
