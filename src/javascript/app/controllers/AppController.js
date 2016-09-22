@@ -62,6 +62,7 @@ var Patient3View10 = require('views/patient3/Patient3View10');
 var Patient3View11 = require('views/patient3/Patient3View11');
 var Patient3View12 = require('views/patient3/Patient3View12');
 var SvgTest = require('views/svg-test');
+var EndView = require('views/EndView');
 
 
 module.exports = Marionette.Controller.extend({
@@ -326,6 +327,10 @@ module.exports = Marionette.Controller.extend({
     patient3view12: function() {
       var patient3View12 = new Patient3View12();
       app.rootView.regionMain.show(patient3View12);
+    },
+    endview: function() {
+      var endView = new EndView();
+      app.rootView.regionMain.show(endView);
     },
 
     defaultHandler: function (route) {

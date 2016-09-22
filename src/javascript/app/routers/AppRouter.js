@@ -61,6 +61,7 @@ module.exports = Marionette.AppRouter.extend({
         'patient3view11': 'patient3view11',
         'patient3view12': 'patient3view12',
         'svgTest': 'svgtest',
+        'endview': 'endview',
         '*default': 'defaultHandler'
     },
 

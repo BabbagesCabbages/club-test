@@ -1,5 +1,5 @@
 var BaseView = require('./BaseView');
-var template = require('templates/startView.hbs');
+var template = require('templates/startView3.hbs');
 
 
 module.exports = BaseView.extend({

@@ -123,7 +123,25 @@ main {
     max-width: 606px;
     margin-bottom:3em;
     p {
-      padding: 0em 1em 2em 2em;
+      padding: 2em 1em 2em 2em;
+    }
+    h2 {
+      margin-left: 1.4em;
+    }
+    figcaption {
+      background-color: $purple;
+    }
+  }
+  &.patient-3 {
+    border-top: 10px solid #2ca775;
+    padding-left: 0!important;
+    padding-right: 0!important;
+    width: 100%;
+    min-width: 606px;
+    max-width: 606px;
+    margin-bottom:3em;
+    p {
+      padding: 2em 1em 2em 2em;
     }
     h2 {
       margin-left: 1.4em;
@@ -136,9 +154,18 @@ main {
 .p-2-steps ul li img {
   margin-right:20px;
 }
+.container-fluid blockquote {
+      margin-top: 1em;
+}
 .magnify {
       padding: .5em;
           width: 100%;
+}
+.no-top-pad {
+  padding-top:0;
+}
+.no-other-pad {
+  padding: 0 0 0 2em!important;
 }
 figure {
   text-align:center;
@@ -369,11 +396,31 @@ border-left: 3px solid white;
   }
 }
 .no-link-color {
+  position: relative;
+  text-decoration: none!important;
+  color: #404040;
+  &:hover {
+    color: #404040;
+  }
+}
+.no-link-color2 {
   position: absolute;
   text-decoration: none!important;
+  color: #404040;
+  &:hover {
+    color: #404040;
+  }
 }
 .container-fluid {
 
+}
+.table-col {
+    h2 {
+      margin:0;
+    }
+    p {
+      line-height: 15px;
+    }
 }
 .handbook-stu {
   width: 184px;
@@ -1094,6 +1141,26 @@ iframe {
 .overlay-pink {
   position: absolute;
   background-color: #DD307B;
+  opacity: .6;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999;
+  left: 0;
+}
+.overlay-green {
+  position: absolute;
+  background-color: #2ca775;
+  opacity: .6;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999;
+  left: 0;
+}
+.overlay-purple {
+  position: absolute;
+  background-color: $purple;
   opacity: .6;
   top: 0;
   right: 0;
