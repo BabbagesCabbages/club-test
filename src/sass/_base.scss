@@ -67,24 +67,30 @@ path {
   letter-spacing: 0px;
   padding: 0 1em;
 }
+#content-main {
+  padding: 60px;
+}
 main {
   background-color: white;
   padding: 2em;
   padding-top:0;
-  padding-left: 2em!important;
-  padding-right: 1em!important;
   margin-left: 1%;
   border-top: 10px solid $dark-blue;
   position:relative;
+  div:first-of-type {
+    padding-left:0;
+    padding-right:0;
+  }
   p {
     color:#061922;
     font-size:16px;
     line-height:22px;
-    margin-bottom:50px;
+    margin-bottom:0px;
   }
   figure {
     position:relative;
-    padding: 0 1em;
+    padding: 0 0em;
+    margin:0!important;
     figcaption {
       position: absolute;
       bottom: 0px;
@@ -98,7 +104,7 @@ main {
   }
   &.patient-1 {
     border-top: 10px solid $pink;
-    padding: 60px!important;
+    padding: 60px;
     min-width: 606px;
     // max-width: 606px;
     p {
@@ -110,9 +116,9 @@ main {
       }
     }
     h2 {
-      margin-left: 1.4em;
-      padding-top: 1em;
-      padding-bottom: 1em;
+      // margin-left: 1.4em;
+      // padding-top: 1em;
+      // padding-bottom: 1em;
     }
     figcaption {
       background-color: $pink;
@@ -130,7 +136,7 @@ main {
       padding: 2em 1em 2em 2em;
     }
     h2 {
-      margin-left: 1.4em;
+      // margin-left: 1.4em;
     }
     figcaption {
       background-color: $purple;
@@ -158,9 +164,6 @@ main {
 .p-2-steps ul li img {
   margin-right:20px;
 }
-.container-fluid blockquote {
-      margin-top: 1em;
-}
 .magnify {
       padding: .5em;
           width: 100%;
@@ -175,7 +178,7 @@ figure {
   text-align:center;
   margin-bottom:1em;
   img:not(.one-hun) {
-    width:90%;
+    // width:90%;
     padding-top:1em;
   }
 }
@@ -193,6 +196,16 @@ border-left: 3px solid white;
 .modal.in .modal-dialog {
     transform: translate(4vw, 10em);
 
+}
+.svg-test {
+  padding:0!important;
+  p {
+    padding:60px!important;
+  }
+  .specs {
+    margin: 0!important;
+    padding: 60px;
+  }
 }
 @media only screen and (min-width:1200px) and (max-width: 1400px) {
 .modal.in .modal-dialog {
@@ -212,6 +225,7 @@ border-left: 3px solid white;
 .modal-body {
   border-top: 10px solid $pink;
   text-align:left;
+  padding:60px!important;
 }
 .patients-container div:nth-child(5) {
   margin-bottom: 6em;
@@ -234,7 +248,8 @@ blockquote {
   text-align: right;
 position: absolute;
 top: 0px;
-right: 13px;
+right: 9px;
+font-size: 15px;
 }
 .svg-text2 {
   background-color: rgba(221, 48, 123, 0.8);
@@ -245,9 +260,10 @@ right: 13px;
   width: 50%;
   margin: .3em;
   line-height: 34px;
-  z-index: 9999;
+  z-index: 999;
   left: 49px;
   top: 21px;
+
       &.full {
         width:98%;
         top:0;
@@ -268,7 +284,7 @@ right: 13px;
   width: 50%;
   margin: .3em;
   line-height: 34px;
-      z-index: 9999;
+      z-index: 999;
   &.full {
     width:98%;
     top:0;
@@ -430,7 +446,7 @@ right: 13px;
   a {
     margin-top: 112px;
     position: relative;
-    top: 30px;
+    top: 17px;
     left: 14px;
     color: white;
     cursor:pointer;
@@ -475,7 +491,6 @@ top: -3px;
 .margin-bottom-equal {
   padding:0;
   margin-bottom: 50px;
-  padding-right: 1em!important;
 }
 .top-nav {
   position: fixed;
@@ -500,6 +515,19 @@ top: -4px;
 .svg-test {
   padding-left: 0!important;
   padding-right: 0 !important;
+  h2 {
+    padding:60px;
+  }
+}
+
+.svg-test .modal-body {
+  h2 {
+    padding:0;
+    margin-bottom:15px;
+  }
+  p {
+    padding:0!important;
+  }
 }
 .complete-side {
   background-color:$med-gray;
@@ -949,7 +977,7 @@ main.patient-2.top-gray {
   }
 }
 .background-nav-blue {
-      bottom: -60px!important;
+      // bottom: -60px!important;
       position: relative;
 }
 .select {
@@ -963,7 +991,8 @@ main.patient-2.top-gray {
     letter-spacing: 4px;
     font-size: 17px;
     text-transform: uppercase;
-
+    background: linear-gradient(135deg, #1d5d7b 0%, #1d3063 100%);
+    padding: 10px 60px;
   }
   &:hover {
     color:white;
@@ -1033,7 +1062,7 @@ main.patient-2.top-gray {
       width: 31px;
       background-color: #61838B;
       position: absolute;
-      right: -67px;
+    right: -71px;
       top: 16px;
       }
 
@@ -1046,7 +1075,7 @@ main.patient-2.top-gray {
       width: 31px;
       background-color: #61838B;
       position: absolute;
-      left: -15px;
+      left: 0px;
       top: 15px;
       }
 
@@ -1055,11 +1084,9 @@ main.patient-2.top-gray {
 
 .modal-footer {
   text-align: center;
-  width: 40%;
   margin: 0 auto;
-  margin-top: -3em;
   position: relative;
-  top: 59px;
+  padding:0;
   .continue {
     &:after {
       content: '';
@@ -1067,7 +1094,7 @@ main.patient-2.top-gray {
       width: 31px;
       background-color: #61838B;
       position: absolute;
-      right: -75px;
+      right: 0px;
       top: 16px;
       }
     &:before {
@@ -1076,10 +1103,13 @@ main.patient-2.top-gray {
       width: 31px;
       background-color: #61838B;
       position: absolute;
-      left: -75px;
+      left:0px;
       top: 15px;
       }
   }
+  &.background-nav-blue {
+    background: #0E2433;
+    }
 }
 .continue-container {
   text-transform:uppercase;
@@ -1089,9 +1119,8 @@ main.patient-2.top-gray {
   width: 100%;
   left: 15px;
   height: 59px;
-  padding: 16px;
-  bottom: -10px;
-
+  padding: 16px 0;
+  bottom: -59px;
 }
 .circle {
   fill: transparent;
@@ -1114,6 +1143,10 @@ main.patient-2.top-gray {
 	padding-bottom: 0em;
 	vertical-align: middle;
 	overflow: hidden;
+  p {
+color: white;
+  }
+
 }
 
 .handbook {
@@ -1153,6 +1186,8 @@ margin:0!important;
   .col-md-4 {
         border: 1px solid gray;
         height:170px;
+        padding-right:0!important;
+        padding-left:0!important;
   }
   .col-md-6 {
       border: 1px solid gray;
@@ -1167,14 +1202,14 @@ li img {
   color: white;
 }
 .top-fix {
-      top: 61px!important;
+      // top: 61px!important;
 }
 .no-margin {
   margin:0 0 1em 0;
 }
 
 .m-bottom {
-  margin-bottom: 3em;
+  margin-bottom: 0em;
 }
 iframe {
   width: 100%;
@@ -1225,5 +1260,6 @@ iframe {
 color: #061922;
 font-size: 42px;
 line-height: 48px;
-
+margin:0;
+text-transform:none;
 }
