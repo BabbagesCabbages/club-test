@@ -98,15 +98,16 @@ main {
   }
   &.patient-1 {
     border-top: 10px solid $pink;
-    padding-left: 0!important;
-    padding-right: 0!important;
+    padding: 60px!important;
     min-width: 606px;
     // max-width: 606px;
     p {
-      padding: 2em 1em 0em 2em;
+      padding: 0em 0em 1em 0;
       text-transform: initial;
       margin:0;
-      margin-bottom:2em;
+      &:last-of-type {
+        padding-bottom:0;
+      }
     }
     h2 {
       margin-left: 1.4em;
@@ -379,7 +380,7 @@ right: 13px;
     padding-bottom: 10px;
     font-family: jaf-facitweb;
     font-weight: 100;
-    color: rgb(68, 68, 68)!important;
+    color: rgb(68, 68, 68);
     & a:link {
       text-decoration: none;
     }
@@ -394,6 +395,7 @@ right: 13px;
       font-family: jaf-facitweb;
       text-transform: uppercase;
       font-weight: 100;
+      color:white;
 
     }
   }
@@ -946,7 +948,10 @@ main.patient-2.top-gray {
 
   }
 }
-
+.background-nav-blue {
+      bottom: -60px!important;
+      position: relative;
+}
 .select {
   position: relative;
   top: -15px;
@@ -965,6 +970,7 @@ main.patient-2.top-gray {
   }
   &.background-nav-blue {
     padding: 14px 50px;
+
   }
 
     &:after {
