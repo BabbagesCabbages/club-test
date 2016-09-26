@@ -31,7 +31,8 @@ h5 { }
 h6 { font-size: 1.2em; }
 
 button {
-
+  text-transform: uppercase;
+  font-weight: 100!important;
   &.muted {
     color: gray!important;
     cursor: default;
@@ -228,6 +229,35 @@ blockquote {
         font-weight: bold;
 
 }
+.check-mark {
+  text-align: right;
+position: absolute;
+top: 0px;
+right: 13px;
+}
+.svg-text2 {
+  background-color: rgba(221, 48, 123, 0.8);
+  font-weight: bold;
+  position: absolute;
+  color: white;
+  padding: 1.4em;
+  width: 50%;
+  margin: .3em;
+  line-height: 34px;
+  z-index: 9999;
+  left: 49px;
+  top: 21px;
+      &.full {
+        width:98%;
+        top:0;
+        padding:1em;
+        p {
+          font-weight: 100;
+          font-size: 20px;
+          padding: 0em 2em 0em 2em;
+        }
+      }
+}
 .svg-text {
   background-color: rgba(221, 48, 123, 0.8);
   font-weight: bold;
@@ -237,6 +267,7 @@ blockquote {
   width: 50%;
   margin: .3em;
   line-height: 34px;
+      z-index: 9999;
   &.full {
     width:98%;
     top:0;
@@ -514,8 +545,8 @@ top: -4px;
   &.background-pink {
     top: 41px;
     position: relative;
-    max-width: 295px;
-    min-width: 294px;
+    max-width: 250px;
+    min-width: 250px;
   }
   ul {
     list-style:none;
@@ -1182,4 +1213,11 @@ iframe {
 
 .margin-bottom {
   margin-bottom:2em;
+}
+
+.modal-body h2 {
+color: #061922;
+font-size: 42px;
+line-height: 48px;
+
 }
