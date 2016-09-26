@@ -77,7 +77,7 @@ main {
   position:relative;
   p {
     font-size:15px;
-
+    margin-bottom:50px;
   }
   figure {
     position:relative;
@@ -98,7 +98,7 @@ main {
     padding-left: 0!important;
     padding-right: 0!important;
     min-width: 606px;
-    max-width: 606px;
+    // max-width: 606px;
     p {
       padding: 2em 1em 0em 2em;
       text-transform: initial;
@@ -120,7 +120,7 @@ main {
     padding-right: 0!important;
     width: 100%;
     min-width: 606px;
-    max-width: 606px;
+    // max-width: 606px;
     margin-bottom:3em;
     p {
       padding: 2em 1em 2em 2em;
@@ -430,7 +430,7 @@ top: -3px;
 }
 .margin-bottom-equal {
   padding:0;
-  margin-bottom: 3em;
+  margin-bottom: 50px;
   padding-right: 1em!important;
 }
 .top-nav {
@@ -466,31 +466,32 @@ top: -4px;
     box-shadow: gray 1px 1px 15px;
   top: 41px;
   position: relative;
-  max-width: 295px;
-  min-width: 294px;
+  max-width: 250px;
+  min-width: 250px;
   .next-steps {
     background-color:$nav-gray;
     margin-right: 0px;
     ul {
       margin-bottom:0!important;
+      padding:25px 50px 0px 50px;
       li:nth-child(1) {
         color: #677A84;
       }
       li:nth-child(2) {
         color: $black;
         margin-bottom: 0px;
-        padding-bottom:15px;
+        padding-bottom:25px;
       }
     }
     ul:nth-child(1) {
-          padding: 27px 4em 16px 4em;
+          padding:25px 50px 0px 50px;
 
     }
     ul:nth-child(2) {
-      padding: 20px 4em 0px 4em;
+      padding:25px 50px 0px 50px;
     }
     ul:nth-child(3) {
-      padding: 20px 4em 0px 4em;
+      padding:25px 50px 0px 50px;
     }
   }
   .border-bottom {
@@ -507,7 +508,6 @@ top: -4px;
   }
   ul {
     list-style:none;
-    padding: 1em 4em;
     font-size: 15px;
     li {
         color: $light-blue;
