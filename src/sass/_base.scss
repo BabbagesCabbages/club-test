@@ -76,7 +76,9 @@ main {
   border-top: 10px solid $dark-blue;
   position:relative;
   p {
-    font-size:15px;
+    color:#061922;
+    font-size:16px;
+    line-height:22px;
     margin-bottom:50px;
   }
   figure {
@@ -213,9 +215,18 @@ border-left: 3px solid white;
   margin-bottom: 6em;
 }
 
+blockquote {
+  color:#061922;
+  font-size:42px;
+  line-height: 48px;
+  &.start-quote {
+    color: white;
+  }
+}
 .top-quote blockquote {
     margin: 0em 0em 2em 1em;
         font-weight: bold;
+
 }
 .svg-text {
   background-color: rgba(221, 48, 123, 0.8);
