@@ -245,6 +245,7 @@ blockquote {
 .top-quote blockquote {
     margin: 0em 0em 2em 1em;
         font-weight: bold;
+            max-width:600px;
 
 }
 .check-mark {
@@ -329,6 +330,18 @@ font-size: 15px;
     top: 0;
     background-color: $dark-blue;
     opacity: .9;
+}
+&.patient1 {
+  outline: rgba(221,48,123,.7) inset 15px;
+  outline-offset: -15px;
+}
+&.patient2 {
+  outline: rgba(118,23,179,.7) inset 15px;
+  outline-offset: -15px;
+}
+&.patient3 {
+  outline: rgba(44,167,117, .7) inset 15px;
+  outline-offset: -15px;
 }
 .patients-container {
   position: absolute;
@@ -1203,6 +1216,9 @@ li img {
 }
 .white {
   color: white;
+font-size: 12px;
+text-transform: uppercase;
+font-weight: 100;
 }
 .top-fix {
       // top: 61px!important;
