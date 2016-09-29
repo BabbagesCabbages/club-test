@@ -29,32 +29,32 @@ module.exports = BaseView.extend({
     onBeforeDestroy: function() {},
 
     handleClick1: function() {
-      $('.size-1-active').fadeIn('fast');
-      $('.size-2-active').fadeOut('fast');
-      $('.size-3-active').fadeOut('fast');
-      $('.size-4-active').fadeOut('fast');
+      $('.size-1-active').css('display', 'block');
+      $('.size-2-active').css('display', 'none');
+      $('.size-3-active').css('display', 'none');
+      $('.size-4-active').css('display', 'none');
       $('#modalIncorrect1').modal('show');
     },
 
     handleClick2: function() {
-      $('.size-2-active').fadeIn('fast');
-      $('.size-1-active').fadeOut('fast');
-      $('.size-3-active').fadeOut('fast');
-      $('.size-4-active').fadeOut('fast');
+      $('.size-2-active').css('display', 'block');
+      $('.size-1-active').css('display', 'none');
+      $('.size-3-active').css('display', 'none');
+      $('.size-4-active').css('display', 'none');
       $('#modalCorrect').modal('show');
     },
     handleClick3: function() {
-      $('.size-3-active').fadeIn('fast');
-      $('.size-1-active').fadeOut('fast');
-      $('.size-2-active').fadeOut('fast');
-      $('.size-4-active').fadeOut('fast');
+      $('.size-3-active').css('display', 'block');
+      $('.size-1-active').css('display', 'none');
+      $('.size-2-active').css('display', 'none');
+      $('.size-4-active').css('display', 'none');
       $('#modalIncorrect2').modal('show');
     },
     handleClick4: function() {
-      $('.size-4-active').fadeIn('fast');
-      $('.size-1-active').fadeOut('fast');
-      $('.size-2-active').fadeOut('fast');
-      $('.size-3-active').fadeOut('fast');
+      $('.size-4-active').css('display', 'block');
+      $('.size-1-active').css('display', 'none');
+      $('.size-2-active').css('display', 'none');
+      $('.size-3-active').css('display', 'none');
       $('#modalIncorrect3').modal('show');
     },
 

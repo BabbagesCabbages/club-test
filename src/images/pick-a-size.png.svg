@@ -1,113 +1,3 @@
-<div class="spacer2"></div>
-<div class="row">
-  <div class="col-md-3 no-pad">
-    <div id="side-navs-fixed">
-      <nav class="side-nav background-pink">
-        <img class="img-responsive" src="images/patient_headshot3_cropped.jpg" alt="" />
-        <ul>
-          <li><span class="white">No.01</span></li>
-          <li>Mammograms</li> <!-- TODO - MAKE THIS TIED TO COLLECTION -->
-        </ul>
-        <div class="row breadcrumb">
-          <ul>
-            <li class="first-step completed"><span class="dot completed"></span></li>
-            <li class="second-step completed"><span class="dot completed"></span></li>
-            <li class="third-step completed"><span class="dot completed"></span></li>
-            <li class="fourth-step completed"><span class="dot completed"></span></li>
-            <li class="fifth-step active mammo"><span class="dot active"><img src="images/hotspot.png" class="hotspot" alt="hotspot" /></span><span class="dot active pulse"></span></li>
-          </ul>
-        </div>
-        <div class="row next-steps">
-          <ul>
-            <li><span>No.02</span></li>
-            <li class="border-bottom">Biopsy</li> <!-- TODO - MAKE THIS TIED TO COLLECTION -->
-          </ul>
-          <ul>
-            <li><span>No.03</span></li>
-            <li class="border-bottom">Molecular Testing</li> <!-- TODO - MAKE THIS TIED TO COLLECTION -->
-          </ul>
-          <ul>
-            <li><span>No.04</span></li>
-            <li>Treatment Recommendations</li> <!-- TODO - MAKE THIS TIED TO COLLECTION -->
-          </ul>
-        </div>
-      </nav>
-
-    </div>
-  </div>
-  <div class="col-md-6 col-md-offset-1 top-quote">
-    <blockquote>
-      It is important to consider the size of an abnormality when evaluating the mammogram.
-    </blockquote>
-    <main id="content-main" class="row patient-1 svg-test">
-
-      <p>
-      Look at the abnormality in Velma’s mammogram.  Which of the objects is closest to the size of the  abnormality?
-
-      </p>
-      <div class="svg-container">
-        <div class="svg-text2">Click the area that shows an abnormality.</div>
-        <figure>
-          <img src="images/p1screen3.png" alt="" />
-        </figure>
-      </div>
-
-      <p>
-        Select the object that is closet to the size of the abnormality.
-      </p>
-
-
-<!-- <svg version="1.1" id="pick-a-size" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="100%" height="100%" viewBox="-14 283 639 225" enable-background="new -14 283 639 225" xml:space="preserve">
-<image overflow="visible" enable-background="new" width="639" height="225" xlink:href="images/pick-a-size.png"  transform="matrix(1 0 0 1 -14 283)">
-</image>
-<polygon class="size-1" fill="transparent" points="105.06,474.87 112.35,469.52 115.75,460.29 112.83,450.09 107,444.26 102.14,440.37 94.85,440.37
-	85.13,446.2 81.73,456.4 83.68,467.09 90.96,472.92 "/>
-<polygon class="size-2" fill="transparent" points="225.68,482.34 214.63,474.05 208,463 208,442.55 211.87,422.11 223.47,408.29 234.53,403.87
-	239.5,403.87 245.03,419.89 250,439.79 247.24,462.45 241.16,472.39 232.87,480.68 "/>
-<polygon class="size-3" fill="transparent" points="381.02,480.26 377.31,476.55 369.36,472.84 358.23,466.48 352.4,458 346.57,434.15 346.57,416.13
-	356.11,399.7 363.8,390.16 378.37,384.86 395.33,390.16 411.23,405 416,412.42 416,434.68 416,450.05 408.05,462.24 400.63,470.19
-	390.56,473.37 385.79,476.55 "/>
-<polygon class="size-4" fill="transparent" points="562.42,480.26 553.3,475.43 541.5,473.28 527.02,450.22 518.97,431.98 518.97,415.88 525.41,393.35
-	531.31,382.09 542.04,372.97 550.08,368.67 558.13,365.46 564.57,363.31 573.15,366.53 577.44,370.82 593,378.87 601.58,389.06
-	608.56,406.76 608.56,430.9 600.51,449.14 590.85,462.02 582.27,470.6 574.76,474.36 569.93,478.65 "/>
-
-
-<g class="size-1-active">
-	<path fill="#DD307B" d="M507.983,467.996c-35.819,0-64.855-29.037-64.855-64.856c0-35.82,29.036-64.856,64.855-64.856
-		c35.817,0,64.855,29.037,64.855,64.856l0,0C572.812,438.942,543.787,467.971,507.983,467.996z M507.983,347.891
-		c-30.518,0-55.249,24.736-55.249,55.249c0,30.512,24.731,55.248,55.249,55.248c30.511,0,55.249-24.736,55.249-55.248l0,0
-		C563.202,372.638,538.484,347.921,507.983,347.891z"/>
-	<path fill="#DD307B" d="M439.68,334.835l7.364,7.364c33.657-33.658,88.222-33.658,121.88,0c33.656,33.657,33.656,88.222,0,121.878
-		l7.363,7.365c37.156-38.294,36.237-99.452-2.057-136.608C536.756,298.465,477.161,298.465,439.68,334.835z"/>
-</g>
-<g class="size-2-active">
-	<path fill="#DD307B" d="M304.504,467.396c-30.356,0-54.963-24.606-54.963-54.964c0-30.354,24.606-54.961,54.963-54.961
-		c30.354,0,54.963,24.607,54.963,54.961l0,0C359.444,442.775,334.846,467.374,304.504,467.396z M304.504,365.612
-		c-25.861,0-46.821,20.963-46.821,46.82c0,25.857,20.96,46.821,46.821,46.821c25.856,0,46.82-20.964,46.82-46.821l0,0
-		C351.298,386.585,330.352,365.638,304.504,365.612z"/>
-	<path fill="#DD307B" d="M246.619,354.548l6.241,6.241c28.522-28.523,74.764-28.523,103.288,0
-		c28.522,28.523,28.522,74.764,0,103.288l6.24,6.24c31.487-32.451,30.71-84.28-1.741-115.77
-		C328.887,323.727,278.383,323.727,246.619,354.548z"/>
-</g>
-<g class="size-3-active">
-	<path fill="#DD307B" d="M160.503,456.842c-20.521,0-37.154-16.633-37.154-37.152c0-20.521,16.634-37.154,37.154-37.154
-		c20.519,0,37.154,16.634,37.154,37.154l0,0C197.643,440.199,181.014,456.829,160.503,456.842z M160.503,388.038
-		c-17.482,0-31.65,14.171-31.65,31.649c0,17.479,14.168,31.65,31.65,31.65c17.479,0,31.65-14.171,31.65-31.65l0,0
-		C192.136,402.216,177.977,388.056,160.503,388.038z"/>
-	<path fill="#DD307B" d="M121.374,380.559l4.219,4.219c19.281-19.282,50.54-19.282,69.821,0c19.281,19.281,19.281,50.54,0,69.821
-		l4.219,4.22c21.286-21.938,20.759-56.974-1.177-78.259C176.986,359.724,142.846,359.724,121.374,380.559z"/>
-</g>
-<g class="size-4-active">
-	<path fill="#DD307B" d="M74.575,463.297c-17.54,0-31.756-14.217-31.756-31.756s14.217-31.757,31.756-31.757
-		c17.538,0,31.756,14.218,31.756,31.757l0,0C106.318,449.072,92.105,463.285,74.575,463.297z M74.575,404.489
-		c-14.942,0-27.053,12.11-27.053,27.052c0,14.939,12.11,27.052,27.053,27.052c14.939,0,27.051-12.111,27.051-27.052l0,0
-		C101.611,416.606,89.509,404.504,74.575,404.489z"/>
-	<path fill="#DD307B" d="M41.13,398.097l3.605,3.605c16.48-16.479,43.197-16.479,59.677,0c16.48,16.479,16.48,43.197,0,59.678
-		l3.606,3.605c18.193-18.75,17.743-48.695-1.006-66.89C88.662,380.288,59.482,380.288,41.13,398.097z"/>
-</g>
-</svg> -->
-
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -1413,108 +1303,35 @@ LuTP4Hk1bNgwWrZsGb399ttKWY76fvL45s2bp74nPoSNHDmy2bgBAAAAIN8Ry+L5GgsWLFBqFsfY
 sZIUl/qg69evV7Gb48ePj8VN3LBhg4oj1aR+1KhRigzGYVyLFi2iLl260I033hiLlp56/rAbn1VS
 ThCLwwGD46aZmLJXgOc7u/MBAAAAIM/gLZ4fa1IKAAAAAAAAFAYphW8QAAAAAAAAiBwgpQAAAAAA
 AABIKQAAAAAAAACAlAIAAAAAAAAgpQAAAAAAAAAAUgoAAAAAAABEjv8FGACeqbP8XHHW7QAAAABJ
-RU5ErkJggg==" transform="matrix(0.9826 0 0 0.9826 5.9397 -1.3465)">
+RU5ErkJggg==" transform="matrix(0.9826 0 0 0.9826 5.9397 1.7793)">
 </image>
-<path class="st0 size-1-active" d="M110.6,161.2c-14.2,0-25.7-11.5-25.7-25.7s11.5-25.7,25.7-25.7s25.7,11.5,25.7,25.7l0,0
-	C136.3,149.7,124.8,161.2,110.6,161.2z M110.6,113.6c-12.1,0-21.9,9.8-21.9,21.9c0,12.1,9.8,21.9,21.9,21.9
-	c12.1,0,21.9-9.8,21.9-21.9l0,0C132.5,123.4,122.7,113.6,110.6,113.6z"/>
-<path class="st0 size-1-active" d="M83.5,108.4l2.9,2.9c13.3-13.3,35-13.3,48.3,0s13.3,35,0,48.3l2.9,2.9c14.7-15.2,14.4-39.4-0.8-54.2
-	C122,94,98.4,94,83.5,108.4z"/>
-<path class="st0 size-2-active" d="M232.8,155.9c-21.5,0-38.9-17.4-38.9-38.9c0-21.5,17.4-38.9,38.9-38.9s38.9,17.4,38.9,38.9l0,0
+<path class="st0" d="M114.6,162c-14.2,0-25.7-11.5-25.7-25.7s11.5-25.7,25.7-25.7s25.7,11.5,25.7,25.7l0,0
+	C140.3,150.5,128.8,162,114.6,162z M114.6,114.4c-12.1,0-21.9,9.8-21.9,21.9c0,12.1,9.8,21.9,21.9,21.9c12.1,0,21.9-9.8,21.9-21.9
+	l0,0C136.5,124.2,126.7,114.4,114.6,114.4z"/>
+<path class="st0" d="M87.6,109.2l2.9,2.9c13.3-13.3,35-13.3,48.3,0s13.3,35,0,48.3l2.9,2.9c14.7-15.2,14.4-39.4-0.8-54.2
+	C126,94.8,102.4,94.8,87.6,109.2z"/>
+<path class="st0" d="M232.8,155.9c-21.5,0-38.9-17.4-38.9-38.9c0-21.5,17.4-38.9,38.9-38.9s38.9,17.4,38.9,38.9l0,0
 	C271.7,138.4,254.3,155.9,232.8,155.9z M232.8,83.8c-18.3,0-33.2,14.8-33.2,33.2c0,18.3,14.8,33.2,33.2,33.2
 	c18.3,0,33.2-14.9,33.2-33.2l0,0C265.9,98.6,251.1,83.8,232.8,83.8z"/>
-<path class="st0 size-2-active" d="M191.8,75.9l4.4,4.4c20.2-20.2,53-20.2,73.2,0c20.2,20.2,20.2,53,0,73.2l4.4,4.4c22.3-23,21.8-59.7-1.2-82
+<path class="st0" d="M191.8,75.9l4.4,4.4c20.2-20.2,53-20.2,73.2,0c20.2,20.2,20.2,53,0,73.2l4.4,4.4c22.3-23,21.8-59.7-1.2-82
 	C250.1,54.1,214.3,54.1,191.8,75.9z"/>
-<path class="st0 size-3-active" d="M392.6,159.2c-28.4,0-51.3-23-51.3-51.3c0-28.4,23-51.3,51.3-51.3s51.3,23,51.3,51.3l0,0
+<path class="st0" d="M392.6,159.2c-28.4,0-51.3-23-51.3-51.3c0-28.4,23-51.3,51.3-51.3s51.3,23,51.3,51.3l0,0
 	C443.9,136.2,420.9,159.2,392.6,159.2z M392.6,64.2c-24.2,0-43.7,19.6-43.7,43.7c0,24.2,19.6,43.7,43.7,43.7
 	c24.2,0,43.7-19.6,43.7-43.7l0,0C436.3,83.7,416.8,64.2,392.6,64.2z"/>
-<path class="st0 size-3-active" d="M338.5,53.8l5.8,5.8c26.6-26.6,69.8-26.6,96.5,0s26.6,69.8,0,96.5l5.8,5.8c29.4-30.3,28.7-78.7-1.6-108.1
+<path class="st0" d="M338.5,53.8l5.8,5.8c26.6-26.6,69.8-26.6,96.5,0s26.6,69.8,0,96.5l5.8,5.8c29.4-30.3,28.7-78.7-1.6-108.1
 	C415.4,25,368.2,25,338.5,53.8z"/>
-<path class="st0 size-4-active" d="M590.3,153.4c-28.8,0-52.1-23.3-52.1-52.1c0-28.8,23.3-52.1,52.1-52.1c28.8,0,52.1,23.3,52.1,52.1l0,0
+<path class="st0" d="M590.3,153.4c-28.8,0-52.1-23.3-52.1-52.1c0-28.8,23.3-52.1,52.1-52.1c28.8,0,52.1,23.3,52.1,52.1l0,0
 	C642.3,130.1,619,153.4,590.3,153.4z M590.3,57c-24.5,0-44.4,19.9-44.4,44.4c0,24.5,19.9,44.4,44.4,44.4c24.5,0,44.4-19.9,44.4-44.4
 	l0,0C634.6,76.8,614.7,57,590.3,57z"/>
-<path class="st0 size-4-active" d="M535.4,46.5l5.9,5.9c27-27,70.8-27,97.9,0c27,27,27,70.8,0,97.9l5.9,5.9c29.8-30.7,29.1-79.8-1.7-109.7
+<path class="st0" d="M535.4,46.5l5.9,5.9c27-27,70.8-27,97.9,0c27,27,27,70.8,0,97.9l5.9,5.9c29.8-30.7,29.1-79.8-1.7-109.7
 	C613.4,17.3,565.5,17.3,535.4,46.5z"/>
-<polygon class="st1 size-1" points="106.5,157.2 118.8,155.2 127,145.8 128.5,135 126,126.2 117.5,120.5 107.2,118.2 101,119.1 92.7,129.2
+<polygon class="st1" points="106.5,157.2 118.8,155.2 127,145.8 128.5,135 126,126.2 117.5,120.5 107.2,118.2 101,119.1 92.7,129.2 
 	90.2,137.8 94.5,151.6 99,155.9 "/>
-<polygon class="st1 size-2" points="232.2,158.2 240,153.8 249.2,144 252.8,136.3 254.5,121.5 253.5,108.7 250.5,96.5 247.2,85.5
+<polygon class="st1" points="232.2,158.2 240,153.8 249.2,144 252.8,136.3 254.5,121.5 253.5,108.7 250.5,96.5 247.2,85.5 
 	244.5,78.5 237.2,78.5 232.8,83.8 222.8,91 215.8,102.5 213,116.2 213,133.8 216.5,144.2 221.8,152.8 "/>
-<polygon class="st1 size-3" points="395.8,159.2 396.2,155.9 401.8,151.6 420,140.2 427.2,123.2 428.8,107 428.2,90.4 420.8,77.2
-	412.2,66.5 402.2,61.8 392.6,58 382.2,59.6 371,68 366.5,76 357.5,93.5 357.5,113.2 363,134.5 368.8,142.8 379.8,155.2 389.2,157.2
+<polygon class="st1" points="395.8,159.2 396.2,155.9 401.8,151.6 420,140.2 427.2,123.2 428.8,107 428.2,90.4 420.8,77.2 
+	412.2,66.5 402.2,61.8 392.6,58 382.2,59.6 371,68 366.5,76 357.5,93.5 357.5,113.2 363,134.5 368.8,142.8 379.8,155.2 389.2,157.2 
 	392.6,161.2 "/>
-<path class="st1 size-4" d="M585.2,157.5l-8.2-1.3l-8.8-6.4l-20.6-18.5l-4.9-11.5l-2-18.4l-1-18.3l4.2-11.8l16-17.8c0,0,13.8-5.5,14.5-5.5
+<path class="st1" d="M585.2,157.5l-8.2-1.3l-8.8-6.4l-20.6-18.5l-4.9-11.5l-2-18.4l-1-18.3l4.2-11.8l16-17.8c0,0,13.8-5.5,14.5-5.5
 	s6.5-5,6.5-5l8.5-5.2l6,4.8l8.2,5.8l11.2,7.3L629,68l1.8,17l2.8,21l-6.5,20.2l-10.3,13.1l-12.5,9l-7.5,1.2l-5.5,6.7L585.2,157.5z"/>
 </svg>
-
-
-
-
-
-
-
-<div class="row continue-container background-nav-blue">
-    <div class="col-md-12 no-pad text-center">
-      <div class="col-md-4">
-        <a class="previous" href="/patient1view4" data-navigate="patient1view4"><button class="" type="button" name="button">Previous</button></a>
-      </div>
-      <div class="col-md-4 line-across"></div>
-      <div class="col-md-4">
-        <!-- Button trigger modal -->
-        <a class="continue next"><button type="button muted" style="color: gray;cursor:default;" data-toggle="modal" data-target="#myModal"  name="button">Submit &#8594;</button></a>
-        <!-- Modal -->
-        <div class="modal fade" id="modalCorrect" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-body">
-                <h2>Correct! Yes, it is about the size of a walnut.</h2>
-              </div>
-              <div class="modal-footer background-nav-blue">
-                <a href="/patient1view6" data-navigate="patient1view6" class="continue"><button id="next-page" type="button" data-dismiss="modal" name="button">Continue &#8594;</button></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="modalIncorrect1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-body">
-                <h2>Incorrect! Please try again.</h2>
-              </div>
-              <div class="modal-footer background-nav-blue">
-                <a class="continue close-modal"><button id="next-page" type="button" data-dismiss="modal" name="button">Try Again &#8594;</button></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="modalIncorrect2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-body">
-                <h2>Incorrect! Please try again.</h2>
-              </div>
-              <div class="modal-footer background-nav-blue">
-                <a class="continue close-modal"><button id="next-page" type="button" data-dismiss="modal" name="button">Try Again &#8594;</button></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="modalIncorrect3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-body">
-                <h2>Incorrect! Please try again.</h2>
-              </div>
-              <div class="modal-footer background-nav-blue">
-                <a class="continue close-modal"><button class="" id="next-page" type="button" data-dismiss="modal" name="button">Try Again &#8594;</button></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-</div>
-
-    </main>
-  </div>
-
-</div>
