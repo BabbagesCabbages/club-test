@@ -28,7 +28,7 @@ module.exports = BaseView.extend({
 
     onBeforeDestroy: function() {},
 
-    handleClick1: function() {
+    handleClick4: function() {
       $('.size-1-active').css('display', 'block');
       $('.size-2-active').css('display', 'none');
       $('.size-3-active').css('display', 'none');
@@ -36,21 +36,22 @@ module.exports = BaseView.extend({
       $('#modalIncorrect1').modal('show');
     },
 
-    handleClick2: function() {
+    handleClick3: function() {
       $('.size-2-active').css('display', 'block');
       $('.size-1-active').css('display', 'none');
       $('.size-3-active').css('display', 'none');
       $('.size-4-active').css('display', 'none');
-      $('#modalCorrect').modal('show');
+      $('#modalIncorrect2').modal('show');
     },
-    handleClick3: function() {
+    handleClick2: function() {
       $('.size-3-active').css('display', 'block');
       $('.size-1-active').css('display', 'none');
       $('.size-2-active').css('display', 'none');
       $('.size-4-active').css('display', 'none');
-      $('#modalIncorrect2').modal('show');
+
+        $('#modalCorrect').modal('show');
     },
-    handleClick4: function() {
+    handleClick1: function() {
       $('.size-4-active').css('display', 'block');
       $('.size-1-active').css('display', 'none');
       $('.size-2-active').css('display', 'none');
