@@ -60,7 +60,7 @@ module.exports = BaseView.extend({
     },
 
     scrollTop: function(){
-    	$('body').animate({ scrollTop: '0' }, 400);
+    	// $('body').animate({ scrollTop: '0' }, 400);
     },
 
     onDestroy: function() {
