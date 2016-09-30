@@ -556,12 +556,20 @@ top: -4px;
   position: relative;
   max-width: 250px;
   min-width: 250px;
+  ul li {
+    &:nth-child(1){
+      padding-top:25px;
+    }
+    &:nth-child(2) {
+      padding-bottom:25px;
+    }
+  }
   .next-steps {
     background-color:$nav-gray;
     margin-right: 0px;
     ul {
       margin-bottom:0!important;
-      padding:25px 50px 0px 50px;
+      padding:0px 50px 0px 50px;
       li:nth-child(1) {
         color: #677A84;
       }
@@ -572,14 +580,14 @@ top: -4px;
       }
     }
     ul:nth-child(1) {
-          padding:25px 50px 0px 50px;
+          padding:0px 50px 0px 50px;
 
     }
     ul:nth-child(2) {
-      padding:25px 50px 0px 50px;
+      padding:0px 50px 0px 50px;
     }
     ul:nth-child(3) {
-      padding:25px 50px 0px 50px;
+      padding:0px 50px 0px 50px;
     }
   }
   .border-bottom {
