@@ -1329,7 +1329,7 @@ text-transform:none;
         top: -10px;
 }
 
-.continue.next {
+.continue.next:not(.y-n) {
   &:after {
     content: '';
     height: 2px;
