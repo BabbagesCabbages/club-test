@@ -34,6 +34,18 @@ var Patient1View22 = require('views/patient1/gene-expression/Patient1View22');
 var Patient1View23 = require('views/patient1/gene-expression/Patient1View23');
 var Patient1View24 = require('views/patient1/gene-expression/Patient1View24');
 var Patient1View25 = require('views/patient1/gene-expression/Patient1View25');
+var Patient1View26 = require('views/patient1/gene-expression/Patient1View26');
+var Patient1View27 = require('views/patient1/gene-expression/Patient1View27');
+var Patient1View28 = require('views/patient1/gene-expression/Patient1View28');
+var Patient1View29 = require('views/patient1/gene-expression/Patient1View29');
+var Patient1View30 = require('views/patient1/gene-expression/Patient1View30');
+var Patient1View31 = require('views/patient1/gene-expression/Patient1View31');
+var Patient1View32 = require('views/patient1/gene-expression/Patient1View32');
+var Patient1View33 = require('views/patient1/gene-expression/Patient1View33');
+var Patient1View34 = require('views/patient1/gene-expression/Patient1View34');
+var Patient1View35 = require('views/patient1/gene-expression/Patient1View35');
+var Patient1View36 = require('views/patient1/gene-expression/Patient1View36');
+var Patient1View37 = require('views/patient1/gene-expression/Patient1View37');
 var StartView = require('views/StartView');
 var StartView2 = require('views/StartView2');
 var Patient2View1 = require('views/patient2/Patient2View1');
@@ -223,6 +235,54 @@ module.exports = Marionette.Controller.extend({
     patient1view25: function() {
       var patient1View25 = new Patient1View25();
       app.rootView.regionMain.show(patient1View25);
+    },
+    patient1view26: function() {
+      var patient1View26 = new Patient1View26();
+      app.rootView.regionMain.show(patient1View26);
+    },
+    patient1view27: function() {
+      var patient1View27 = new Patient1View27();
+      app.rootView.regionMain.show(patient1View27);
+    },
+    patient1view28: function() {
+      var patient1View28 = new Patient1View28();
+      app.rootView.regionMain.show(patient1View28);
+    },
+    patient1view29: function() {
+      var patient1View29 = new Patient1View29();
+      app.rootView.regionMain.show(patient1View29);
+    },
+    patient1view30: function() {
+      var patient1View30 = new Patient1View30();
+      app.rootView.regionMain.show(patient1View30);
+    },
+    patient1view31: function() {
+      var patient1View31 = new Patient1View31();
+      app.rootView.regionMain.show(patient1View31);
+    },
+    patient1view32: function() {
+      var patient1View32 = new Patient1View32();
+      app.rootView.regionMain.show(patient1View32);
+    },
+    patient1view33: function() {
+      var patient1View33 = new Patient1View33();
+      app.rootView.regionMain.show(patient1View33);
+    },
+    patient1view34: function() {
+      var patient1View34 = new Patient1View34();
+      app.rootView.regionMain.show(patient1View34);
+    },
+    patient1view35: function() {
+      var patient1View35 = new Patient1View35();
+      app.rootView.regionMain.show(patient1View35);
+    },
+    patient1view36: function() {
+      var patient1View36 = new Patient1View36();
+      app.rootView.regionMain.show(patient1View36);
+    },
+    patient1view37: function() {
+      var patient1View37 = new Patient1View37();
+      app.rootView.regionMain.show(patient1View37);
     },
     startview2: function() {
       var startView2 = new StartView2();
