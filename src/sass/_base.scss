@@ -337,15 +337,15 @@ top: 13px;
     opacity: .9;
 }
 &.patient1 {
-  outline: rgba(221,48,123,.7) inset 15px;
+  outline: rgba(221,48,123,.7) solid 15px;
   outline-offset: -15px;
 }
 &.patient2 {
-  outline: rgba(118,23,179,.7) inset 15px;
+  outline: rgba(118,23,179,.7) solid 15px;
   outline-offset: -15px;
 }
 &.patient3 {
-  outline: rgba(44,167,117, .7) inset 15px;
+  outline: rgba(44,167,117, .7) solid 15px;
   outline-offset: -15px;
 }
 .patients-container {
