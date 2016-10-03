@@ -1045,12 +1045,19 @@ main.patient-2.top-gray {
   position: relative;
   top: 14px;
 }
+button {
+  color:white!important;
+  &:hover {
+    color:white!important;
+  }
+}
 .col-md-3.yes-no {
       border-radius: 5px;
       text-align: center;
       text-transform:uppercase;
       line-height: 40px;
       letter-spacing:5px;
+      padding: 0 25px;
       background-color: #cbdbe3;
       &:nth-child(2) {
         background: linear-gradient(135deg, #1d5d7b 0%, #1d3063 100%);
@@ -1301,7 +1308,7 @@ iframe {
   margin-bottom:2em;
 }
 .col-sm-offset-2-5 {
-  margin-left: 19%;
+  margin-left: 23%;
 }
 .modal-body h2 {
 color: #061922;
