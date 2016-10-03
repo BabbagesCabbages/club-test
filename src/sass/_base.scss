@@ -77,6 +77,9 @@ main {
   margin-left: 1%;
   border-top: 10px solid $dark-blue;
   position:relative;
+  img {
+
+  }
   div:first-of-type {
     padding-left:0;
     padding-right:0;
@@ -252,7 +255,7 @@ blockquote {
   text-align: right;
 position: absolute;
 top: 0px;
-right: 9px;
+right: 35px;
 font-size: 15px;
 }
 .svg-text2 {
@@ -1042,7 +1045,7 @@ main.patient-2.top-gray {
   position: relative;
   top: 14px;
 }
-.col-md-2.yes-no {
+.col-md-3.yes-no {
       border-radius: 5px;
       text-align: center;
       text-transform:uppercase;
@@ -1075,16 +1078,17 @@ main.patient-2.top-gray {
           color:white;
         }
   }
-  .continue {
+  .continue:not(~.yes-no) {
     position: relative;
-    color: white;
+    color: white!important;
     button {
       letter-spacing: 4px;
       font-size: 17px;
       text-transform: uppercase;
+      color:white!important;
     }
     &:hover {
-      color:white;
+      color:white!important;
     }
 
 
@@ -1259,8 +1263,9 @@ iframe {
   position: absolute;
   top: 43px;
   height: 12px;
-  right: 126px;
+  right: 167px;
 }
+
 .overlay-pink {
   position: absolute;
   background-color: #DD307B;
@@ -1295,7 +1300,9 @@ iframe {
 .margin-bottom {
   margin-bottom:2em;
 }
-
+.col-sm-offset-2-5 {
+  margin-left: 19%;
+}
 .modal-body h2 {
 color: #061922;
 font-size: 42px;
