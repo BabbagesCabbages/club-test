@@ -1323,3 +1323,18 @@ text-transform:none;
     left: -23px;
     top: 38px;
 }
+.intro-fix {
+        top: -10px;
+}
+
+.continue.next {
+  &:after {
+    content: '';
+    height: 2px;
+    width: 31px;
+    background-color: #61838B;
+    position: absolute;
+    right: 0;
+    top: 15px;
+  }
+}
