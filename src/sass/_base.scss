@@ -563,6 +563,7 @@ top: -4px;
   max-width: 250px;
   min-width: 250px;
   ul li {
+    text-transform:none;
     &:nth-child(1){
       padding-top:25px;
     }
@@ -1247,7 +1248,6 @@ li img {
 .white {
   color: white;
 font-size: 12px;
-text-transform: uppercase;
 font-weight: 100;
 }
 .top-fix {
