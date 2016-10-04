@@ -40,6 +40,7 @@ module.exports = Marionette.AppRouter.extend({
         'patient1view29': 'patient1view29',
         'patient1view30': 'patient1view30',
         'patient1view31': 'patient1view31',
+        'patient1view31_2': 'patient1view31_2',
         'patient1view32': 'patient1view32',
         'patient1view33': 'patient1view33',
         'patient1view34': 'patient1view34',

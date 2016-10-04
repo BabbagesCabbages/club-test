@@ -40,6 +40,7 @@ var Patient1View28 = require('views/patient1/gene-expression/Patient1View28');
 var Patient1View29 = require('views/patient1/gene-expression/Patient1View29');
 var Patient1View30 = require('views/patient1/gene-expression/Patient1View30');
 var Patient1View31 = require('views/patient1/gene-expression/Patient1View31');
+var Patient1View31_2 = require('views/patient1/gene-expression/Patient1View31-2');
 var Patient1View32 = require('views/patient1/gene-expression/Patient1View32');
 var Patient1View33 = require('views/patient1/gene-expression/Patient1View33');
 var Patient1View34 = require('views/patient1/gene-expression/Patient1View34');
@@ -259,6 +260,10 @@ module.exports = Marionette.Controller.extend({
     patient1view31: function() {
       var patient1View31 = new Patient1View31();
       app.rootView.regionMain.show(patient1View31);
+    },
+    patient1view31_2: function() {
+      var patient1View31_2 = new Patient1View31_2();
+      app.rootView.regionMain.show(patient1View31_2);
     },
     patient1view32: function() {
       var patient1View32 = new Patient1View32();
