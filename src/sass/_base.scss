@@ -258,6 +258,9 @@ top: 0px;
 right: 35px;
 font-size: 15px;
 }
+image {
+      width: 100%;
+}
 .svg-text2 {
   background-color: rgba(221, 48, 123, 0.8);
   font-weight: bold;
@@ -269,9 +272,9 @@ top: 13px;
   margin: .3em;
   line-height: 34px;
   z-index: 999;
-  left: 49px;
+  left: 0px;
   top: 21px;
-
+    padding-left: 50px!important;
       &.full {
         width:98%;
         top:0;
@@ -440,7 +443,7 @@ top: 13px;
   .patient-copy {
     background-color:white;
     min-height: 286px;
-    max-height: 286pside-x;
+    max-height: 286px;
     width: 100%;
     margin:0;
     p {
