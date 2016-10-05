@@ -184,7 +184,6 @@ figure {
 .side-nav img:not(.hotspot) {
   right: 0px;
 position: relative;
-border-left: 3px solid white;
 }
 #pick-size {
 //   width: 100%;
@@ -333,18 +332,17 @@ top: 13px;
     opacity: .9;
 }
 &.patient1 {
-  outline: rgba(221,48,123,.7) solid 15px;
-  outline-offset: -15px;
-
+  border: rgba(221,48,123,.7) solid 15px;
+    overflow: hidden;
 }
 &.patient2 {
-  outline: rgba(118,23,179,.7) solid 15px;
-  outline-offset: -15px;
-}
+  border: rgba(118,23,179,.7) solid 15px;
+    overflow: hidden;
+  }
 &.patient3 {
-  outline: rgba(44,167,117, .7) solid 15px;
-  outline-offset: -15px;
-}
+  border: rgba(44,167,117, .7) solid 15px;
+    overflow: hidden;
+  }
 .patients-container {
   position: absolute;
   .pick-patient {
@@ -367,17 +365,17 @@ top: 13px;
         width: 100%;
         margin-bottom: 0em;
         &.patient1 {
-          outline: rgba(221,48,123,.7) solid 15px;
-          outline-offset: -15px;
-        }
+          border: rgba(221,48,123,.7) solid 15px;
+    overflow: hidden;
+    }
         &.patient2 {
-          outline: rgba(118,23,179,.7) solid 15px;
-          outline-offset: -15px;
-        }
+          border: rgba(118,23,179,.7) solid 15px;
+    overflow: hidden;
+       }
         &.patient3 {
-          outline: rgba(44,167,117, .7) solid 15px;
-          outline-offset: -15px;
-        }
+          border: rgba(44,167,117, .7) solid 15px;
+    overflow: hidden;
+          }
       }
     }
     .up-next {
