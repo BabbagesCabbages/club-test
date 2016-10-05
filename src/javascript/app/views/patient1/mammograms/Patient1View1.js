@@ -14,6 +14,7 @@ module.exports = BaseView.extend({
     initialize: function() {
       $('.first-step').addClass('completed');
       $('body').css('background-image','url("images/bg2.jpg")');
+      $('body').animate({ scrollTop: '0' }, 400);
     },
     onBeforeRender: function() {},
 

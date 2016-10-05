@@ -14,7 +14,7 @@ module.exports = BaseView.extend({
     },
 
     initialize: function() {
-
+$('body').animate({ scrollTop: '0' }, 400);
     },
     onBeforeRender: function() {},
 
