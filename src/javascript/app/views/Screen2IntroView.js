@@ -30,13 +30,14 @@ module.exports = BaseView.extend({
 
     onShow: function() {},
 
-    onBeforeDestroy: function() {},
+    onBeforeDestroy: function() {window.location.reload();},
 
     scrollTop: function(){
     	$('body').animate({ scrollTop: '0' }, 400);
     },
 
     onDestroy: function() {
+
     }
 
 });

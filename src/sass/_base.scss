@@ -8,7 +8,7 @@
 @-o-viewport { width: device-width; }
 @viewport { width: device-width; }
 
-
+//line 1046 commented out
 // Border-box everything
 // ----------------------
 // (http://paulirish.com/2012/box-sizing-border-box-ftw/)
@@ -30,15 +30,8 @@ h4 { }
 h5 { }
 h6 { font-size: 1.2em; }
 
-button {
-  text-transform: uppercase;
-  font-weight: 100!important;
-  &.muted {
-    color: gray!important;
-    cursor: default;
-    text-transform: uppercase;
-    font-size: 17px;
-  }
+a {
+  color:white;
 }
 // Body reset
 // -----------
@@ -48,7 +41,7 @@ body {
     font-family: $baseFontFamily;
     line-height: $baseLineHeight;
     color: $textColor;
-    background:url('../images/bg1.png')no-repeat fixed center center;
+    background:url('../images/bg1.jpg')no-repeat fixed center center;
     background-size: cover;
 }
 
@@ -422,6 +415,7 @@ top: 13px;
     font-family: jaf-facitweb;
     font-weight: 100;
     color: rgb(68, 68, 68);
+    position:relative;
     & a:link {
       text-decoration: none;
     }
@@ -498,6 +492,9 @@ top: 13px;
 }
 .container-fluid {
 
+}
+#modalCorrect {
+    z-index: 9999999999;
 }
 .table-col {
     h2 {
@@ -1052,12 +1049,12 @@ main.patient-2.top-gray {
   position: relative;
   top: 14px;
 }
-button {
-  color:white!important;
-  &:hover {
-    color:white!important;
-  }
-}
+// button {
+//   color:white;
+//   &:hover {
+//     color:white;
+//   }
+//}
 .col-md-3.yes-no {
       border-radius: 5px;
       text-align: center;
@@ -1276,7 +1273,7 @@ iframe {
   position: absolute;
   top: 43px;
   height: 12px;
-  right: 167px;
+  right: 30px;
 }
 
 .overlay-pink {
@@ -1332,8 +1329,11 @@ text-transform:none;
 .intro-fix {
         top: -10px;
 }
-
+.gray {
+  color: gray;
+}
 .continue.next:not(.y-n) {
+
   &:after {
     content: '';
     height: 2px;
@@ -1342,5 +1342,19 @@ text-transform:none;
     position: absolute;
     right: 0;
     top: 15px;
+  }
+}
+
+button {
+  text-transform: uppercase;
+  font-weight: 100!important;
+  &.muted {
+    color: gray!important;
+    cursor: default;
+    text-transform: uppercase;
+    font-size: 17px;
+  }
+  &.highlight {
+    color: white!important;
   }
 }

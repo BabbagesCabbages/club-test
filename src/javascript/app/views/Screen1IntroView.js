@@ -36,7 +36,7 @@ module.exports = BaseView.extend({
       if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
   			$('#Big-Browser-Modal').css('display','block');
       }
-
+      
 
     },
 
@@ -45,7 +45,9 @@ module.exports = BaseView.extend({
     onRender: function() {
     },
 
-    onBeforeShow: function() {},
+    onBeforeShow: function() {
+
+    },
 
     onShow: function() {},
 
