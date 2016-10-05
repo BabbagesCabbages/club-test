@@ -465,16 +465,18 @@ top: 13px;
   background: $pink;
   right: 0;
   width: 50px;
-  a {
+  cursor: pointer;
+  &:hover {
+    text-decoration:none;
+  }
+  span {
     margin-top: 112px;
     position: relative;
     top: 17px;
     left: 14px;
     color: white;
     cursor:pointer;
-    &:hover {
-      text-decoration:none;
-    }
+
   }
 }
 .no-link-color {
