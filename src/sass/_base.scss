@@ -394,11 +394,14 @@ top: 13px;
       position: absolute;
       left: -62px;
       top: -23px;
+      max-width: 72px;
+
       &.finished {
         left: -48px;
       top: -1px;
       cursor:default!important;
       pointer-events: none;
+      max-width: 84px;
       }
     }
     .lock {
@@ -407,6 +410,8 @@ top: 13px;
       top: -22px;
       z-index: 999999;
           cursor: default;
+          max-width: 84px;
+
     }
 
 
@@ -477,6 +482,7 @@ top: 13px;
   right: 0;
   width: 50px;
   cursor: pointer;
+  max-width:40px;
   &:hover {
     text-decoration:none;
   }
@@ -1360,6 +1366,7 @@ text-transform:none;
 }
 .ul-fix {
   transform: scale(0.8);
+  -webkit-transform: scale(0.8)!important;
     position: relative;
     left: -45px;
     top: 38px;
