@@ -22,6 +22,7 @@ var Patient1View10 = require('views/patient1/biopsy/Patient1View10');
 var Patient1View11 = require('views/patient1/biopsy/Patient1View11');
 var Patient1View12 = require('views/patient1/biopsy/Patient1View12');
 var Patient1View13 = require('views/patient1/biopsy/Patient1View13');
+var Patient1View13_5 = require('views/patient1/biopsy/Patient1View13-5');
 var Patient1View14 = require('views/patient1/gene-expression/Patient1View14');
 var Patient1View15 = require('views/patient1/gene-expression/Patient1View15');
 var Patient1View16 = require('views/patient1/gene-expression/Patient1View16');
@@ -47,6 +48,7 @@ var Patient1View34 = require('views/patient1/gene-expression/Patient1View34');
 var Patient1View35 = require('views/patient1/gene-expression/Patient1View35');
 var Patient1View36 = require('views/patient1/gene-expression/Patient1View36');
 var Patient1View37 = require('views/patient1/gene-expression/Patient1View37');
+var Patient1View38 = require('views/patient1/gene-expression/Patient1View38');
 var StartView = require('views/StartView');
 var StartView2 = require('views/StartView2');
 var Patient2View1 = require('views/patient2/Patient2View1');
@@ -189,6 +191,10 @@ module.exports = Marionette.Controller.extend({
       var patient1View13 = new Patient1View13();
       app.rootView.regionMain.show(patient1View13);
     },
+    patient1view13_5: function() {
+      var patient1View13_5 = new Patient1View13_5();
+      app.rootView.regionMain.show(patient1View13_5);
+    },
     patient1view14: function() {
       var patient1View14 = new Patient1View14();
       app.rootView.regionMain.show(patient1View14);
@@ -288,6 +294,10 @@ module.exports = Marionette.Controller.extend({
     patient1view37: function() {
       var patient1View37 = new Patient1View37();
       app.rootView.regionMain.show(patient1View37);
+    },
+    patient1view38: function() {
+      var patient1View38 = new Patient1View38();
+      app.rootView.regionMain.show(patient1View38);
     },
     startview2: function() {
       var startView2 = new StartView2();
