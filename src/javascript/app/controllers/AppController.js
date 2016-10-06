@@ -94,7 +94,7 @@ module.exports = Marionette.Controller.extend({
     scrollTop: function() {
       $('button.continue').on('click', function() {
         $(window).scrollTop(300);
-        $('body,html').scrollTop(300);
+      
       })
     },
 

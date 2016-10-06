@@ -12,23 +12,25 @@ module.exports = BaseView.extend({
     },
 
     initialize: function() {
-      $('.first-step').addClass('completed');
-      $('body').css('background-image','url("images/bg2.jpg")');
-      $('body').animate({ scrollTop: '0' }, 400);
+        $('.first-step').addClass('completed');
+        $('body').css('background-image', 'url("images/bg2.jpg")');
+        $('body').animate({
+            scrollTop: '0'
+        }, 400);
     },
     onBeforeRender: function() {},
 
     onRender: function() {
-      var  snav = $(".side-nav");
-          snscroll = "side-nav-scrolled";
+        var snav = $(".side-nav");
+        snscroll = "side-nav-scrolled";
 
-      $(window).scroll(function() {
-        if( $(this).scrollTop() > 200 ) {
-          snav.addClass(snscroll);
-        } else {
-          snav.removeClass(snscroll);
-        }
-      });
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                snav.addClass(snscroll);
+            } else {
+                snav.removeClass(snscroll);
+            }
+        });
     },
 
     onBeforeShow: function() {},
@@ -36,12 +38,13 @@ module.exports = BaseView.extend({
     onShow: function() {
 
     },
-    scroll: function() {
-    },
+    scroll: function() {},
     onBeforeDestroy: function() {},
 
-    scrollTop: function(){
-    	$('body').animate({ scrollTop: '0' }, 400);
+    scrollTop: function() {
+        $('body').animate({
+            scrollTop: '0'
+        }, 400);
     },
 
     onDestroy: function() {

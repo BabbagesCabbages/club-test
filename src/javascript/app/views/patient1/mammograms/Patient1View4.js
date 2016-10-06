@@ -31,7 +31,7 @@ module.exports = BaseView.extend({
       $('path.circle').fadeIn('fast');
     },
     scrollTop: function(){
-    	$('body').animate({ scrollTop: '0' }, 400);
+    	$('body').animate({ scrollTop: '0' }, 400);  $('body,html').scrollTop(0);
     },
     nextPage: function() {
       $('#myModal').modal('hide');
