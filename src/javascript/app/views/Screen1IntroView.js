@@ -55,8 +55,11 @@ module.exports = BaseView.extend({
           $('#modalBrowser').modal('show');
     };
     if (ie === 10) {
-          $('#modalBrowser').modal('show');
+
     };
+    if (Function('/*@cc_on return document.documentMode===10@*/')()){
+  $('#modalBrowser').modal('show');
+};
 
     },
 
