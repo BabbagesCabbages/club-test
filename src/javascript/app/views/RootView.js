@@ -39,9 +39,8 @@ module.exports = Marionette.LayoutView.extend({
             e.preventDefault(); // prevent the default action (scroll / move caret)
         });
 
-        if ($.browser.msie && $.browser.version <= 10) {
-              $('#modalBrowser').modal('show');
-        }
+
+        
 
     },
 
