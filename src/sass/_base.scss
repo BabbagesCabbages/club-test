@@ -71,6 +71,7 @@ main {
   margin-left: 1%;
   border-top: 10px solid $dark-blue;
   position:relative;
+  max-width:650px;
   img {
 
   }
@@ -1461,4 +1462,16 @@ button {
 
 .text-blue {
   color: #337ab7!important;
+}
+
+.gray {
+  &:after {
+    content: '';
+height: 2px;
+width: 31px;
+background-color: #61838B;
+position: absolute;
+right: 0;
+top: 15px;
+  }
 }

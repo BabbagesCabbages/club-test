@@ -12,8 +12,8 @@ $baseUrl: env_or_default("STATIC_URL", "/static/");
 // -------------------------
 $white:                     #fff !default;
 $black:                     #444 !default;
-$dark-blue:                 #061922 !default;
-$light-blue:                #204252 !default;
+$dark-blue:                 #0a2332 !default;
+$light-blue:                #61838B !default;
 $pink:                      #DD307B !default;
 $light-pink:                rgba(221,48,123, .3) !default;
 $med-gray:                  #CBDBE3 !default;
@@ -81,7 +81,7 @@ $largeMobileWidth:          "600px";
 $tabletWidth:               "768px";
 $desktopWidth:              "992px";
 $largeDesktopWidth:         "1392px";
-$modalFix:                  "@media only screen and (min-width:1200px) and (max-width: 1300px)";
+$modalFix:                  "@media only(min-width:1200px) and (max-width: 1300px)";
 
 // Easing presets
 // --------------------------
