@@ -1153,6 +1153,26 @@ main.patient-2.top-gray {
   margin: 0 auto;
   position: relative;
   padding:0;
+  .continue-2 {
+    &:after {
+      content: '';
+      height: 2px;
+      width: 31px;
+      background-color: #61838B;
+      position: absolute;
+      right: 0px;
+      top: 16px;
+      }
+    &:before {
+      content: '';
+      height: 2px;
+      width: 31px;
+      background-color: #61838B;
+      position: absolute;
+      left:0px;
+      top: 15px;
+      }
+  }
   .continue {
     &:after {
       content: '';
