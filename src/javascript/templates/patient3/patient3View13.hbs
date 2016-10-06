@@ -1,12 +1,7 @@
-
-
-
-
 <div class="spacer2"></div>
 <div class="row">
-  <div class="col-sm-3 no-pad">
-    <div id="side-navs-1">
-
+  <div class="col-md-3 no-pad">
+    <div id="side-navs-fixed">
       <nav class="side-nav background-green">
         <img class="patient3" src="images/patient2-final.jpg">
         <ul class="background-green margin-bottom-0">
@@ -45,60 +40,58 @@
   </div>
   <div class="col-md-6 col-md-offset-1 top-quote">
     <blockquote>
-      <!-- Velma’s doctors have sent her tissue sample for ER testing.
-    </blockquote> -->
-    <main id="content-main" class="row patient-3 svg-test">
+    Dr. You: Make a Decision
+    </blockquote>
+    <main id="content-main" class="row patient-3">
+<p>
+
+    What are the implications of Brittany’s test results on her treatment plan?  Record your thoughts in your Lab Handbook.<br><br>
+
+Do you have enough information to make a recommendation for treatment or do you need additional information?  <br><br>
+
+Click below to make your selection for next steps. </p>
+         <!-- <figure class="m-bottom">
+           <img src="images/patient2slide1.png" alt="" />
 
 
-        <div class="svg-container">
-            <img src="images/test_tubes.jpg" alt="cell biopsy slide 3" />
-            <div class="svg-text full">
-                <p>
-                  Click to send Brittany's tissue sample for OncoType DX® testing.
-                </p>
-                  <a class="y-n continue next left-arrow" ><span type="button"  name="button" data-toggle="modal" data-target="#myModal" class="top-1">&#8594;</span></a>
 
-            </div>
-        </div>
-        <div class="row continue-container background-nav-blue">
-            <div class="col-md-12 no-pad text-center">
-              <div class="col-md-4">
-                <a data-navigate="patient3view12" class="previous"><button class="" type="button" name="button">&#8592; Previous</button></a>
-              </div>
-              <div class="col-md-4 line-across">
-
-              </div>
-              <div class="col-md-4 col-md-offset-4">
+         </figure> -->
+         <div class="row continue-container background-nav-blue">
+             <div class="col-md-12 no-pad text-center">
+               <div class="col-md-6">
 
 
-                <!-- Button trigger modal -->
-                <a class="continue next"><button class="muted" type="button"  name="button">Next &#8594;</button></a>
-
-                <!-- Modal -->
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div style="text-align:left;" class="modal-body">
-                      <h2>Brittany’s OncoType DX® Test results are in!</h2>
-                      <p><span class="pink-hl">Brittany Featherston’s OncoType DX® Test Results: 35</span><br><br>
-Be sure to record the results in your Lab Handbook.
-</p>
-
-                      </div>
-                      <div class="modal-footer background-nav-blue">
-                        <a  class="continue-2" href="/patient3view14" data-navigate="patient3view14"><button id="next-page" type="button" class="next-page" data-dismiss="modal" name="button">Continue</button></a>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                 <!-- Button trigger modal -->
+                 <a data-navigate="patient3view12" class="previous"><button class="select treatment" type="button"data-toggle="modal" data-target="#myModal" >Select Treatment</button></a>
 
 
-              </div>
-            </div>
-        </div>
+
+                 <!-- Modal -->
+                 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                   <div class="modal-dialog" role="document">
+                     <div class="modal-content">
+                       <div class="modal-body">
+                       <h2>Select Treatment:  You do not have enough information to select treatment for your patient.  Please continue to next test.</h2>
+                       </div>
+                       <div class="modal-footer background-nav-blue">
+                          <a data-navigate="patient3view14"><button class="muted" name="button">Next &#8594;</button></a>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+
+
+               </div>
+               <div class="col-md-2 line-across">
+
+               </div>
+               <div class="col-md-4">
+                 <a data-navigate="patient3view14" class="continue next next-test"><button type="button" class="next-test" name="button">Next Test &#8594;</button></a>
+               </div>
+             </div>
+         </div>
 
     </main>
-</div>
+  </div>
 
 </div>
