@@ -54,12 +54,17 @@ background: -moz-linear-gradient(-45deg, #1d5d7b 0%, #1d3063 100%); /* FF3.6-15 
 background: -webkit-linear-gradient(-45deg, #1d5d7b 0%,#1d3063 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(135deg, #1d5d7b 0%,#1d3063 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
-
+.background-gray2 {
+  background-color: #cbdbe3;
+}
 .background-dark-blue {
   background: $dark-blue;
   &.side-nav {
     border-top: 10px solid $light-blue;
   }
+}
+.background-gray3 {
+  background: #E7F0F5;
 }
 
 .background-gray {
@@ -67,6 +72,9 @@ background: linear-gradient(135deg, #1d5d7b 0%,#1d3063 100%); /* W3C, IE10+, FF1
 }
 .pink-text {
   color: $pink!important;
+}
+.purple-text {
+  color: #753fb7!important;
 }
 .nav-gray {
   color: $nav-gray;

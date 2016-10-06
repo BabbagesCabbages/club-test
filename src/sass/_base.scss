@@ -130,7 +130,7 @@ main {
     // max-width: 606px;
     margin-bottom:3em;
     p {
-      padding: 2em 1em 2em 2em;
+      padding: 0em 0em 1em 0;
     }
     h2 {
       // margin-left: 1.4em;
@@ -146,10 +146,10 @@ main {
     // max-width: 606px;
     margin-bottom:6em;
     p {
-      padding: 2em 1em 2em 2em;
+      padding: 0em 0em 1em 0;
     }
     h2 {
-      margin-left: 1.4em;
+      padding: 25px 50px;
     }
     figcaption {
       background-color: $purple;
@@ -206,6 +206,7 @@ height: 18px;
     margin: 0!important;
     padding: 60px;
   }
+
 }
 @media only screen and (min-width:1200px) and (max-width: 1400px) {
 .modal.in .modal-dialog {
@@ -226,6 +227,14 @@ height: 18px;
   border-top: 10px solid $pink;
   text-align:left;
   padding:60px!important;
+  &.pat2 {
+    border-top: 10px solid #753fb7!important;
+
+  }
+  &.pat3 {
+    border-top: 10px solid #2ca775!important;
+
+  }
 }
 .patients-container div:nth-child(5) {
   margin-bottom: 6em;
@@ -557,7 +566,7 @@ top: -4px;
   padding-left: 0!important;
   padding-right: 0 !important;
   h2 {
-    padding:60px;
+    padding:25px 50px;
   }
 }
 
@@ -1178,8 +1187,13 @@ main.patient-2.top-gray {
 
   }
 }
+.reg-pad {
+  padding-right:15px!important;
+  padding-left:15px!important;
+  background:none!important;
+}
 
-.modal-footer {
+.modal-footer, .choice {
   text-align: center;
   margin: 0 auto;
   position: relative;
@@ -1329,6 +1343,9 @@ font-weight: 100;
 
 .m-bottom {
   margin-bottom: 0em;
+}
+.m-bot {
+      margin-bottom: 50px;
 }
 iframe {
   width: 100%;
