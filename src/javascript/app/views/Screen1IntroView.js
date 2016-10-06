@@ -51,7 +51,10 @@ module.exports = BaseView.extend({
     return v > 4 ? v : undef;
 
     }());
-    if (ie <= 11) {
+    if (ie < 10) {
+          $('#modalBrowser').modal('show');
+    };
+    if (ie === 10) {
           $('#modalBrowser').modal('show');
     };
 
