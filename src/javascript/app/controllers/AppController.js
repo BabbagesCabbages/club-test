@@ -26,6 +26,7 @@ var Patient1View13_5 = require('views/patient1/biopsy/Patient1View13-5');
 var Patient1View14 = require('views/patient1/gene-expression/Patient1View14');
 var Patient1View15 = require('views/patient1/gene-expression/Patient1View15');
 var Patient1View16 = require('views/patient1/gene-expression/Patient1View16');
+var Patient1View16_5 = require('views/patient1/gene-expression/Patient1View16-5');
 var Patient1View17 = require('views/patient1/gene-expression/Patient1View17');
 var Patient1View18 = require('views/patient1/gene-expression/Patient1View18');
 var Patient1View19 = require('views/patient1/gene-expression/Patient1View19');
@@ -76,6 +77,9 @@ var Patient3View9 = require('views/patient3/Patient3View9');
 var Patient3View10 = require('views/patient3/Patient3View10');
 var Patient3View11 = require('views/patient3/Patient3View11');
 var Patient3View12 = require('views/patient3/Patient3View12');
+var Patient3View13 = require('views/patient3/Patient3View13');
+var Patient3View14 = require('views/patient3/Patient3View14');
+var Patient3View15 = require('views/patient3/Patient3View15');
 var SvgTest = require('views/svg-test');
 var EndView = require('views/EndView');
 
@@ -94,7 +98,7 @@ module.exports = Marionette.Controller.extend({
     scrollTop: function() {
       $('button.continue').on('click', function() {
         $(window).scrollTop(300);
-      
+
       })
     },
 
@@ -207,6 +211,10 @@ module.exports = Marionette.Controller.extend({
     patient1view16: function() {
       var patient1View16 = new Patient1View16();
       app.rootView.regionMain.show(patient1View16);
+    },
+    patient1view16_5: function() {
+      var patient1View16_5 = new Patient1View16_5();
+      app.rootView.regionMain.show(patient1View16_5);
     },
     patient1view17: function() {
       var patient1View17 = new Patient1View17();
@@ -403,6 +411,18 @@ module.exports = Marionette.Controller.extend({
     patient3view12: function() {
       var patient3View12 = new Patient3View12();
       app.rootView.regionMain.show(patient3View12);
+    },
+    patient3view13: function() {
+      var patient3View13 = new Patient3View13();
+      app.rootView.regionMain.show(patient3View13);
+    },
+    patient3view14: function() {
+      var patient3View14 = new Patient3View14();
+      app.rootView.regionMain.show(patient3View14);
+    },
+    patient3view15: function() {
+      var patient3View15 = new Patient3View15();
+      app.rootView.regionMain.show(patient3View15);
     },
     endview: function() {
       var endView = new EndView();

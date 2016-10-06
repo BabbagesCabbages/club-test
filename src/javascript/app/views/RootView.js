@@ -48,7 +48,6 @@ module.exports = Marionette.LayoutView.extend({
             $("#modalBrowserWidth").modal('hide');
         }
           $(window).resize(function () {
-          console.log($(window).width());
 
         if (window.innerWidth < 950) {
             $("#modalBrowserWidth").modal('show');

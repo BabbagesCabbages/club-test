@@ -26,6 +26,7 @@ module.exports = Marionette.AppRouter.extend({
         'patient1view14': 'patient1view14',
         'patient1view15': 'patient1view15',
         'patient1view16': 'patient1view16',
+        'patient1view16_5': 'patient1view16_5',
         'patient1view17': 'patient1view17',
         'patient1view18': 'patient1view18',
         'patient1view19': 'patient1view19',
@@ -75,6 +76,9 @@ module.exports = Marionette.AppRouter.extend({
         'patient3view10': 'patient3view10',
         'patient3view11': 'patient3view11',
         'patient3view12': 'patient3view12',
+        'patient3view13': 'patient3view13',
+        'patient3view14': 'patient3view14',
+        'patient3view15': 'patient3view15',
         'svgTest': 'svgtest',
         'endview': 'endview',
         '*default': 'defaultHandler'
