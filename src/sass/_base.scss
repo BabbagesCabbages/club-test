@@ -74,7 +74,7 @@ main {
 
   }
   div:first-of-type {
-    padding-left:0;
+    // padding-left:0;
     padding-right:0;
   }
   p {
@@ -296,7 +296,7 @@ top: 13px;
   color: white;
   padding: 2em;
   width: 100%;
-top: 13px;
+top: 0px;
   margin: .3em;
   line-height: 34px;
       z-index: 999;
@@ -1251,21 +1251,17 @@ main.patient-2.top-gray {
   left: 15px;
   height: 59px;
   padding: 16px 0;
-  bottom: -59px;
+  bottom: -52px;
 }
 .circle {
-  fill: transparent;
-  stroke: red;
-  stroke-width: 4;
+  fill: white;
   display:none;
 }
 .cancer {
   fill: transparent;
-
 }
-.cancer:hover {
-  fill: white;
-  stroke: blue;
+.circle,.circle2, .st0 {
+  display:none;
 }
 .svg-container {
 	display: inline-block;

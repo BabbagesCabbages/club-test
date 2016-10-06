@@ -9,8 +9,9 @@ module.exports = BaseView.extend({
     ui: {},
     events: {
         'click .continue': 'scrollTop',
-        "click .correct": "handleClick",
-        'click #next-page':'nextPage'
+        'click .cancer': 'handleClick',
+        'click #next-page':'nextPage',
+        'click image': 'handleClick2'
     },
 
     initialize: function() {
@@ -28,10 +29,22 @@ module.exports = BaseView.extend({
     onBeforeDestroy: function() {},
 
     handleClick: function() {
-      $('path.circle').fadeIn('fast');
+      $('#modalIncorrect').modal('hide');
+      $('.circle').css('display','block');
+      $('.circle2').css('display','block');
+      $('.st0').css('display','block');
+      $('#modalCorrect').modal('show');
+      $('.close-modal').click(function(e) {
+        if (e.target) {
+          $('#modalIncorrect').modal('hide');
+        }
+      });
+    },
+    handleClick2: function() {
+      $('#modalIncorrect').modal('show');
     },
     scrollTop: function(){
-    	$('body').animate({ scrollTop: '0' }, 400);  $('body,html').animate({ scrollTop: '0' }, 400); 
+    	$('body').animate({ scrollTop: '0' }, 400);  $('body,html').animate({ scrollTop: '0' }, 400);
     },
     nextPage: function() {
       $('#myModal').modal('hide');

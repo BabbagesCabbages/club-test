@@ -76,6 +76,9 @@ background: linear-gradient(135deg, #1d5d7b 0%,#1d3063 100%); /* W3C, IE10+, FF1
 .purple-text {
   color: #753fb7!important;
 }
+.green-text {
+  color: #2ca775!important;
+}
 .nav-gray {
   color: $nav-gray;
 }
@@ -91,6 +94,7 @@ background: linear-gradient(135deg, #1d5d7b 0%,#1d3063 100%); /* W3C, IE10+, FF1
 .no-pad {
   padding: 0;
 }
+
 
 html.magnifying > body {
   overflow-x: hidden !important;
