@@ -43,7 +43,7 @@
     <blockquote>
       Here is Michele’s mammogram.
     </blockquote>
-    <main id="content-main" class="row patient-2">
+    <main id="content-main" class="row patient-2 svg-test">
 
       <p>
         Review Michele’s mammogram and click on an area that shows abnormalities.
@@ -51,7 +51,7 @@
       </p>
       <div class="svg-container">
         <div class="svg-text">Which object is closest in size?</div>
-      <svg preserveAspectRatio="xMinYMin meet" class="svg-content" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      <!-- <svg preserveAspectRatio="xMinYMin meet" class="svg-content" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
          width="100%" height="100%" viewBox="0 0 432 451.2" enable-background="new 0 0 432 451.2" xml:space="preserve">
          <image width="432" height="451.2" xlink:href="images/Mammogram_Left_Abnormal_Patient2-Michele.jpg">
          </image>
@@ -67,7 +67,56 @@
       <path class="circle" fill-rule="evenodd" clip-rule="evenodd" fill="none" d="M122.16,87.36c22.4,0,40.56,18.159,40.56,40.56
         c0,22.4-18.16,40.56-40.56,40.56c-22.401,0-40.56-18.159-40.56-40.56C81.6,105.519,99.759,87.36,122.16,87.36z"/>
       <path class="cancer" fill-rule="evenodd" clip-rule="evenodd" fill="none" d="M98.4,109.44"/>
+      </svg> -->
+
+
+       <svg style="cursor:pointer;" version="1.1" id="mammo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      	 viewBox="0 0 810 810" style="enable-background:new 0 0 810 810;" xml:space="preserve">
+      <style type="text/css">
+      	.st0{opacity:0.35;}
+      	.st1{fill:#FFFFFF;}
+
+      </style>
+      <image style="width:100%;height:100%;position:relative;top:0;left:0;bottom:0;right:0;overflow:visible;enable-background:new" width="810" height="810" xlink:href="images/Mammogram_Right_Abnormal_Patient1-Velma.jpg" >
+      </image>
+      <ellipse class="st0" cx="606.7" cy="656.5" rx="68.1" ry="68.8"/>
+      <path fill="#FFFFFF" class="circle" d="M606.7,732.1c-41.4,0-74.9-33.9-74.9-75.6s33.6-75.6,74.9-75.6s74.9,33.9,74.9,75.6l0,0
+      	C681.6,698.2,648,732.1,606.7,732.1z M606.7,592c-35.3,0-63.8,28.9-63.8,64.4s28.6,64.4,63.8,64.4c35.3,0,63.8-28.9,63.8-64.4l0,0
+      	C670.5,620.9,641.9,592.1,606.7,592z"/>
+      <path fill="#FFFFFF" class="circle2" d="M527.7,576.8l8.5,8.6c38.9-39.3,102-39.3,140.8,0s38.9,102.9,0,142.2l8.5,8.6c42.9-44.7,41.9-116-2.4-159.3
+      	C639.9,534.4,571,534.4,527.7,576.8z"/>
+      <polygon fill="none" class="cancer" points="531.7,717 527.7,665 542.8,607 580,578 619,566 654,573 688.1,598.6 706,632 711,680 670.5,696.1
+      	626.6,717.7 577,739 559,739 "/>
       </svg>
+      <?xml version="1.0" encoding="utf-8"?>
+
+
+</svg>
+<div class="modal fade" id="modalCorrect" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h2>Correct. The area you clicked on indicates abnormal breast tissue.</h2>
+      </div>
+      <div class="modal-footer background-nav-blue">
+        <a href="/patient2view3" data-navigate="patient2view3" class="continue"><button id="next-page" type="button" data-dismiss="modal" name="button">Continue</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modalIncorrect" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h2>Incorrect. The area you clicked on indicates normal breast tissue. Please try again</h2>
+      </div>
+      <div class="modal-footer background-nav-blue">
+        <a class="continue-2 close-modal"><button id="next-page" type="button" data-dismiss="modal" name="button">Try Again</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
       </div>
           <div class="row continue-container background-nav-blue">
               <div class="col-md-12 no-pad text-center">
@@ -81,22 +130,10 @@
 
 
                   <!-- Button trigger modal -->
-                  <a class="continue next"><button type="button"data-toggle="modal" data-target="#myModal"  name="button">Next &#8594;</button></a>
+                  <a class="continue next"><button type="button"  name="button">Next &#8594;</button></a>
 
                   <!-- Modal -->
-                  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-body">
-                          <h2>Correct! The area you clicked on indicates abnormal breast tissue.</h2>
-                        </div>
-                        <div class="modal-footer background-nav-blue">
-                          <a data-navigate="patient2view3" class="continue"><button id="next-page" type="button" data-dismiss="modal" name="button">Continue</button></a>
 
-                        </div>
-                      </div>
-                    </div>
-                  </div>
 
 
                 </div>
