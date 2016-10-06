@@ -1463,7 +1463,9 @@ button {
 .text-blue {
   color: #337ab7!important;
 }
-
+.p-top {
+  padding-top:50px!important;
+}
 .gray {
   &:after {
     content: '';
