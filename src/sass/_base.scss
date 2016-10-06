@@ -196,7 +196,7 @@ height: 18px;
 }
 
 .modal.in .modal-dialog {
-    transform: translate(4vw, 10em);
+    transform: translate(0vw, 10vh);
 
 }
 .hide-nav {
@@ -212,6 +212,16 @@ height: 18px;
     padding: 60px;
   }
 
+}
+@media (max-width: 991px) {
+  .modal-dialog {
+    width:100%;
+    margin:0;
+  }
+.modal-dialog {
+    position: relative;
+    width: auto;
+}
 }
 @media only screen and (min-width:1200px) and (max-width: 1400px) {
 .modal.in .modal-dialog {
@@ -668,7 +678,7 @@ top: -4px;
         width: 23px;
         background-color: $light-blue;
         position: absolute;
-        z-index: 99999;
+        z-index: 999;
         left: 0px;
         top: 52px;
         }
@@ -1198,7 +1208,9 @@ main.patient-2.top-gray {
   padding-left:15px!important;
   background:none!important;
 }
-
+#modalBrowserWidth, #modalJavascript {
+  width:100vw!important;
+}
 .modal-footer, .choice {
   text-align: center;
   margin: 0 auto;
@@ -1212,7 +1224,7 @@ main.patient-2.top-gray {
       background-color: #61838B;
       position: absolute;
       right: 0px;
-      top: 16px;
+      top: 9px;
       }
     &:before {
       content: '';
@@ -1221,7 +1233,7 @@ main.patient-2.top-gray {
       background-color: #61838B;
       position: absolute;
       left:0px;
-      top: 15px;
+      top: 9px;
       }
   }
   .continue {

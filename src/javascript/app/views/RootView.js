@@ -18,7 +18,8 @@ module.exports = Marionette.LayoutView.extend({
     },
 
     events: {
-        'click @ui.links': 'onClickNavigate'
+        'click @ui.links': 'onClickNavigate',
+        'click .continue': 'closeModal'
     },
 
     initialize: function() {
@@ -41,18 +42,18 @@ module.exports = Marionette.LayoutView.extend({
 
 
       $(document).ready(function () {
-        if (window.innerWidth < 950) {
+        if (window.innerWidth < 994) {
             $("#modalBrowserWidth").modal('show');
         }
-        else if (window.innerWidth > 950) {
+        else if (window.innerWidth > 994) {
             $("#modalBrowserWidth").modal('hide');
         }
           $(window).resize(function () {
 
-        if (window.innerWidth < 950) {
+        if (window.innerWidth < 994) {
             $("#modalBrowserWidth").modal('show');
         }
-        else if (window.innerWidth > 950) {
+        else if (window.innerWidth > 994) {
             $("#modalBrowserWidth").modal('hide');
         }
         });
@@ -60,7 +61,11 @@ module.exports = Marionette.LayoutView.extend({
 
 
     },
-
+    closeModal: function() {
+      $('#modalBrowserWidth').modal('hide');
+      $('body').removeClass('modal-open');
+      $('.modal-backdrop').remove();
+    },
     setListeners: function() {
 
         // No click delay for iOS
