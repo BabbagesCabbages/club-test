@@ -125,8 +125,6 @@ main {
   }
   &.patient-2 {
     border-top: 10px solid $purple;
-    padding-left: 0!important;
-    padding-right: 0!important;
     width: 100%;
     min-width: 662px;
     // max-width: 606px;
@@ -143,8 +141,6 @@ main {
   }
   &.patient-3 {
     border-top: 10px solid #2ca775;
-    padding-left: 0!important;
-    padding-right: 0!important;
     width: 100%;
     min-width: 662px;
     // max-width: 606px;
@@ -161,7 +157,7 @@ main {
   }
 }
 .p-2-steps ul li img {
-  margin-right:20px;
+  margin-right:10px;
 }
 .magnify {
       padding: .5em;
@@ -641,7 +637,7 @@ top: -4px;
     li {
         color: $light-blue;
       &:nth-child(2) {
-        font-size:18px;
+        font-size:17px;
         color: white;
       }
 
