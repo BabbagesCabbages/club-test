@@ -31,7 +31,7 @@ module.exports = BaseView.extend({
       $('#myModal').modal('hide');
       $('body').removeClass('modal-open');
       $('.modal-backdrop').remove();
-    
+
     }
 
 });

@@ -1068,6 +1068,34 @@ main.patient-2.top-gray {
       top: 30px;
     }
 }
+.continue-2:not(.next) {
+  position: relative;
+  color: white;
+  button {
+    letter-spacing: 4px;
+    font-size: 17px;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #1d5d7b 0%, #1d3063 100%);
+    padding: 10px 60px;
+  }
+  &:hover {
+    color:white;
+  }
+  &.background-nav-blue {
+    padding: 14px 50px;
+
+  }
+
+    &:after {
+      content: '';
+      height: 2px;
+      width: 31px;
+      background-color: #61838B;
+      position: absolute;
+      right: 0;
+      top: 30px;
+    }
+}
 .line-across {
   height: 2px;
   background-color: $light-blue;

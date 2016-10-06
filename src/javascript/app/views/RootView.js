@@ -40,7 +40,25 @@ module.exports = Marionette.LayoutView.extend({
         });
 
 
-        
+      $(document).ready(function () {
+        if (window.innerWidth < 950) {
+            $("#modalBrowserWidth").modal('show');
+        }
+        else if (window.innerWidth > 950) {
+            $("#modalBrowserWidth").modal('hide');
+        }
+          $(window).resize(function () {
+          console.log($(window).width());
+
+        if (window.innerWidth < 950) {
+            $("#modalBrowserWidth").modal('show');
+        }
+        else if (window.innerWidth > 950) {
+            $("#modalBrowserWidth").modal('hide');
+        }
+        });
+      });
+
 
     },
 

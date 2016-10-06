@@ -58,9 +58,9 @@ module.exports = BaseView.extend({
 
     };
     if (Function('/*@cc_on return document.documentMode===10@*/')()){
-  $('#modalBrowser').modal('show');
-};
-
+      $('#modalBrowser').modal('show');
+    };
+      
     },
 
     onBeforeRender: function() {},
