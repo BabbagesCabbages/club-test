@@ -14,7 +14,7 @@ module.exports = BaseView.extend({
     },
 
     initialize: function() {
-$('body').animate({ scrollTop: '0' }, 400);  $('body,html').scrollTop(0);
+$('body').animate({ scrollTop: '0' }, 400);  $('body,html').animate({ scrollTop: '0' }, 400); 
     },
     onBeforeRender: function() {},
 
@@ -31,7 +31,7 @@ $('body').animate({ scrollTop: '0' }, 400);  $('body,html').scrollTop(0);
       $('path.circle').fadeIn('fast');
     },
     scrollTop: function(){
-    	$('body').animate({ scrollTop: '0' }, 400);  $('body,html').scrollTop(0);
+    	$('body').animate({ scrollTop: '0' }, 400);  $('body,html').animate({ scrollTop: '0' }, 400); 
     },
     nextPage: function() {
     },
