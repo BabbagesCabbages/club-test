@@ -73,6 +73,7 @@ path {
         padding-bottom:50px;
       }
 }
+
 main {
   background-color: white;
   padding: 2em;
@@ -81,6 +82,11 @@ main {
   border-top: 10px solid $dark-blue;
   position:relative;
   max-width:650px;
+
+
+
+
+
   img {
 
   }
@@ -1052,8 +1058,9 @@ top: -4px;
   }
 }
 .top-gray {
+  padding:0;
   p {
-    margin-top:25px;
+    padding:50px!important;
   }
 }
 ul.background-purple {
@@ -1383,6 +1390,9 @@ font-weight: 100;
 }
 .m-bot {
       margin-bottom: 50px;
+}
+.m-bot-25 {
+  margin-bottom: 50px!important;
 }
 iframe {
   width: 100%;
