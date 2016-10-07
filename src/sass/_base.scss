@@ -1137,11 +1137,15 @@ main.patient-2.top-gray {
       line-height: 40px;
       letter-spacing:5px;
       padding: 0 25px;
-      background-color: #cbdbe3;
-      &:nth-child(2) {
-        background: linear-gradient(135deg, #1d5d7b 0%, #1d3063 100%);
 
-      }
+        background-color:#4791d0!important;
+        &:hover {
+          cursor:pointer;
+          background: #1d3063; /* Old browsers */
+          background: -moz-linear-gradient(-45deg, #1d5d7b 0%, #1d3063 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(-45deg, #1d5d7b 0%,#1d3063 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(135deg, #1d5d7b 0%,#1d3063 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        }
       a {
         color: white;
 
@@ -1434,6 +1438,7 @@ text-transform:none;
 .gray {
   color: gray;
 }
+
 .continue.next:not(.y-n) {
 
   &:after {
