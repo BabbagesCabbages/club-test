@@ -60,9 +60,18 @@ path {
   letter-spacing: 0px;
   padding: 0 1em;
 }
-#content-main {
+#content-main:not(.patient-1):not(.patient-2):not(.patient3) {
   padding: 50px;
       box-shadow: gray 1px 1px 5px;
+      p {
+        padding-bottom: 50px;
+      }
+      p:last-of-type {
+        padding-bottom:0px;
+      }
+      figure:first-of-type img {
+        padding-bottom:50px;
+      }
 }
 main {
   background-color: white;
@@ -204,12 +213,22 @@ height: 18px;
 }
 .svg-test {
   padding:0!important;
+  p:first-of-type {
+    padding:50px!important;
+  }
   p {
-    padding:15px!important;
+    padding:15px;
   }
   .specs {
     margin: 0!important;
     padding: 60px;
+  }
+
+}
+.svg-text.full {
+
+  p {
+    padding:15px!important;
   }
 
 }
