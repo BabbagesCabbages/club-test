@@ -61,11 +61,11 @@ module.exports = Marionette.LayoutView.extend({
 
 
     },
-    closeModal: function() {
-      $('#modalBrowserWidth').modal('hide');
-      $('body').removeClass('modal-open');
-      $('.modal-backdrop').remove();
-    },
+    // closeModal: function() {
+    //   $('#modalBrowserWidth').modal('hide');
+    //   $('body').removeClass('modal-open');
+    //   $('.modal-backdrop').remove();
+    // },
     setListeners: function() {
 
         // No click delay for iOS

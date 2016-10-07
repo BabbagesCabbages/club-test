@@ -1,5 +1,5 @@
 var BaseView = require('../BaseView');
-var template = require('templates/patient2/patient2view3.hbs');
+var template = require('templates/patient2/patient2View3.hbs');
 
 module.exports = BaseView.extend({
 
@@ -40,6 +40,9 @@ module.exports = BaseView.extend({
           $('#modalIncorrect1').modal('show');
           $('.gray').removeClass('incorrect1');
           $('.gray').css('color', 'gray');
+          $('#modalCorrect').modal('hide');
+          $('#modalIncorrect2').modal('hide');
+          $('#modalIncorrect3').modal('hide');
         }
         $('.close-modal').click(function(e) {
           if (e.target) {
@@ -65,6 +68,9 @@ module.exports = BaseView.extend({
           $('#modalIncorrect2').modal('show');
           $('.gray').removeClass('incorrect2');
           $('.gray').css('color', 'gray');
+          $('#modalCorrect').modal('hide');
+          $('#modalIncorrect1').modal('hide');
+          $('#modalIncorrect3').modal('hide');
         }
         $('.close-modal').click(function(e) {
           if (e.target) {
@@ -89,6 +95,9 @@ module.exports = BaseView.extend({
           $('#modalCorrect').modal('show');
           $('.gray').removeClass('correct');
           $('.gray').css('color', 'gray');
+          $('#modalIncorrect1').modal('hide');
+          $('#modalIncorrect2').modal('hide');
+          $('#modalIncorrect3').modal('hide');
         }
         $('.close-modal').click(function(e) {
           if (e.target) {
@@ -115,6 +124,9 @@ module.exports = BaseView.extend({
           $('#modalIncorrect3').modal('show');
           $('.gray').removeClass('incorrect3');
           $('.gray').css('color', 'gray');
+          $('#modalCorrect').modal('hide');
+          $('#modalIncorrect1').modal('hide');
+          $('#modalIncorrect2').modal('hide');
         }
         $('.close-modal').click(function(e) {
           if (e.target) {
@@ -129,7 +141,7 @@ module.exports = BaseView.extend({
     },
 
     scrollTop: function(){
-    	// $('body').animate({ scrollTop: '0' }, 400);  $('body,html').animate({ scrollTop: '0' }, 400); 
+    	// $('body').animate({ scrollTop: '0' }, 400);  $('body,html').animate({ scrollTop: '0' }, 400);
     },
 
     onDestroy: function() {
