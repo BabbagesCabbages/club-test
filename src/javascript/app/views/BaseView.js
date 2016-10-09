@@ -1,6 +1,6 @@
 var Marionette = require('backbone.marionette');
 var template = require('templates/index.hbs');
-
+var Backbone = require('backbone');
 
 
 
@@ -27,6 +27,7 @@ module.exports = Marionette.ItemView.extend({
       }
     });
     this.render();
+
 
 
   },

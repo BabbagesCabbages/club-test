@@ -1,7 +1,7 @@
 var Marionette = require('backbone.marionette');
 var constants = require('utils/constants');
 var attachFastClick = require('fastclick');
-
+var Backbone = require('backbone');
 
 module.exports = Marionette.LayoutView.extend({
 
@@ -23,6 +23,7 @@ module.exports = Marionette.LayoutView.extend({
     },
 
     initialize: function() {
+      
         this.setListeners();
         this.$el.removeClass(constants.INITING_CLASS);
         $(document).keydown(function(e) {
@@ -59,7 +60,10 @@ module.exports = Marionette.LayoutView.extend({
         });
       });
 
-
+      var loadUrl = Backbone.History.prototype.loadUrl;
+          Backbone.History.prototype.loadUrl = function() {
+          if (!loadUrl.apply(this, arguments)) this.trigger('route-not-found');
+        };
     },
     // closeModal: function() {
     //   $('#modalBrowserWidth').modal('hide');
@@ -87,6 +91,7 @@ module.exports = Marionette.LayoutView.extend({
             url: url,
             trigger: true
         });
+
     }
 
 });

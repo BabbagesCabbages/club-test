@@ -14,7 +14,7 @@ module.exports = BaseView.extend({
         'click image': 'handleClick2',
     },
     initialize: function() {
-
+        $('.gray').css('color', 'gray');
     },
 
     handleClick: function(e) {
@@ -34,6 +34,8 @@ module.exports = BaseView.extend({
 
       $('.gray').css('color', 'white');
       $('.gray').addClass('correct');
+      $('.gray').addClass('whitey');
+      $('.button.muted').css('color', 'white');
       $('.correct').click(function(e) {
         if (e.target) {
 
@@ -71,7 +73,9 @@ module.exports = BaseView.extend({
         $(document.body).append(div);
 
         $('.gray').css('color', 'white');
+        $('.button.muted').css('color', 'white');
         $('.gray').addClass('incorrect');
+        $('.gray').addClass('whitey');
         $('.incorrect').click(function(e) {
           if (e.target) {
             $('#modalIncorrect').modal('show');

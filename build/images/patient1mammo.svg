@@ -1,1 +1,18 @@
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 810 810"><style>.st0{opacity:.35}.st1{fill:#fff}.st2{fill:none}</style><image width="810" height="810" xlink:href="../../../../Desktop/discovery assetsfinal/_web_ready/_Re-Sized_Interactive Images/810x810/Mammogram_Right_Abnormal_Patient1-Velma.jpg" overflow="visible"/><ellipse class="st0" cx="606.7" cy="656.5" rx="68.1" ry="68.8"/><path class="st1" d="M606.7 732.1c-41.4 0-74.9-33.9-74.9-75.6s33.6-75.6 74.9-75.6 74.9 33.9 74.9 75.6c0 41.7-33.6 75.6-74.9 75.6zm0-140.1c-35.3 0-63.8 28.9-63.8 64.4s28.6 64.4 63.8 64.4c35.3 0 63.8-28.9 63.8-64.4 0-35.5-28.6-64.3-63.8-64.4z"/><path class="st1" d="M527.7 576.8l8.5 8.6c38.9-39.3 102-39.3 140.8 0s38.9 102.9 0 142.2l8.5 8.6c42.9-44.7 41.9-116-2.4-159.3-43.2-42.5-112.1-42.5-155.4-.1z"/><path class="st2" d="M531.7 717l-4-52 15.1-58 37.2-29 39-12 35 7 34.1 25.6L706 632l5 48-40.5 16.1-43.9 21.6L577 739h-18z"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 810 810" style="enable-background:new 0 0 810 810;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.35;fill:#B8C2DE;enable-background:new    ;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:none;}
+</style>
+<image style="overflow:visible;enable-background:new    ;" width="810" height="810" xlink:href="../../../../Desktop/discovery assetsfinal/_web_ready/_Re-Sized_Interactive Images/810x810/Mammogram_Right_Abnormal_Patient1-Velma.jpg" >
+</image>
+<ellipse class="st0" cx="606.7" cy="656.5" rx="68.1" ry="68.8"/>
+<path class="st1" d="M606.7,726.8c-38.6,0-69.8-31.6-69.8-70.4s31.3-70.4,69.8-70.4s69.8,31.6,69.8,70.4
+	C676.5,695.2,645.2,726.8,606.7,726.8z M606.7,592c-35.3,0-63.8,28.9-63.8,64.4s28.6,64.4,63.8,64.4c35.3,0,63.8-28.9,63.8-64.4
+	S641.9,592.1,606.7,592z"/>
+<path class="st2" d="M531.7,717l-4-52l15.1-58l37.2-29l39-12l35,7l34.1,25.6L706,632l5,48l-40.5,16.1l-43.9,21.6L577,739h-18
+	L531.7,717z"/>
+</svg>

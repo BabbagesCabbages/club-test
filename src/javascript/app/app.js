@@ -13,6 +13,7 @@ app = new Marionette.Application({
     initialize: function() {
         this.state = new State();
         this.on('navigate', this.navigate, this);
+
     },
 
     onStart: function() {
@@ -23,9 +24,8 @@ app = new Marionette.Application({
         this.rootView = new RootView({
             model: this.state
         });
-
         Backbone.history.start({
-            pushState: true,
+            pushState: false,
             root: '/'
         });
 
@@ -43,7 +43,7 @@ app = new Marionette.Application({
             trigger: trigger
         });
 
-    },
+    }
 
 
 });

@@ -17,6 +17,9 @@ module.exports = BaseView.extend({
     },
 
     initialize: function() {
+
+
+
       //inject baseview with screen1view
      $('#Big-Browser-Modal').css('display','none');
       var  sn = $(".side-nav");
@@ -60,7 +63,7 @@ module.exports = BaseView.extend({
     if (Function('/*@cc_on return document.documentMode===10@*/')()){
       $('#modalBrowser').modal('show');
     };
-      
+
     },
 
     onBeforeRender: function() {},
