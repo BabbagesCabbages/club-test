@@ -1591,10 +1591,17 @@ top: 15px;
 .multi-pad {
   padding: 0 50px 50px 50px!important;
 }
+.answer-1,.answer-2,.answer-3,.answer-4 {
+  button {
+    top:0!important;
+  }
+}
 .fig-fix {
   padding: 50px 50px 0 50px!important;
 }
-
+.modal-backdrop {
+  pointer-events:none!important;
+}
 .pick-fix {
   top:-21px;
 }

@@ -37,9 +37,12 @@ module.exports = BaseView.extend({
       $('.gray').addClass('incorrect1');
       $('.incorrect1').click(function(e) {
         if (e.target) {
-          $('#modalIncorrect1').modal('show');
+          $('#modalIncorrect1').modal('show');$('#modalIncorrect1').modal({backdrop: 'static',});
           $('.gray').removeClass('incorrect1');
           $('.gray').css('color', 'gray');
+          $('#modalCorrect').modal('hide');
+          $('#modalIncorrect2').modal('hide');
+          $('#modalIncorrect3').modal('hide');
         }
         $('.close-modal').click(function(e) {
           if (e.target) {
@@ -67,6 +70,9 @@ module.exports = BaseView.extend({
           $('#modalIncorrect2').modal('show');
           $('.gray').removeClass('incorrect2');
           $('.gray').css('color', 'gray');
+          $('#modalCorrect').modal('hide');
+          $('#modalIncorrect1').modal('hide');
+          $('#modalIncorrect3').modal('hide');
         }
         $('.close-modal').click(function(e) {
           if (e.target) {
@@ -93,6 +99,9 @@ module.exports = BaseView.extend({
           $('#modalCorrect').modal('show');
           $('.gray').removeClass('correct');
           $('.gray').css('color', 'gray');
+          $('#modalIncorrect1').modal('hide');
+          $('#modalIncorrect2').modal('hide');
+          $('#modalIncorrect3').modal('hide');
         }
         $('.close-modal').click(function(e) {
           if (e.target) {
@@ -121,6 +130,9 @@ module.exports = BaseView.extend({
           $('#modalIncorrect3').modal('show');
           $('.gray').removeClass('incorrect3');
           $('.gray').css('color', 'gray');
+          $('#modalCorrect').modal('hide');
+          $('#modalIncorrect1').modal('hide');
+          $('#modalIncorrect2').modal('hide');
         }
         $('.close-modal').click(function(e) {
           if (e.target) {

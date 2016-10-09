@@ -37,7 +37,7 @@ module.exports = BaseView.extend({
       $('.gray').addClass('incorrect1');
       $('.incorrect1').click(function(e) {
         if (e.target) {
-          $('#modalIncorrect1').modal('show');
+          $('#modalIncorrect1').modal('show');$('#modalIncorrect1').modal({backdrop: 'static',});
           $('.gray').removeClass('incorrect1');
           $('.gray').css('color', 'gray');
           $('#modalCorrect2').modal('hide');
