@@ -1093,22 +1093,36 @@ main.patient-2.top-gray {
   position: relative;
   top: -15px;
 }
+
 .continue:not(.next) {
   position: relative;
   color: white;
+
   button {
     letter-spacing: 4px;
     font-size: 17px;
     text-transform: uppercase;
     background: linear-gradient(135deg, #1d5d7b 0%, #1d3063 100%);
-    padding: 10px 60px;
+    padding: 15px 60px;
+    top: -6px;
+    position: relative;
+    &:hover {
+      background: #64a3cf!important;
+    }
   }
   &:hover {
     color:white;
   }
   &.background-nav-blue {
     padding: 14px 50px;
-
+    &:hover {
+      background: #64a3cf!important;
+    }
+    button {
+      &:hover {
+      background: #64a3cf!important;
+      }
+    }
   }
 
     &:after {
@@ -1118,8 +1132,11 @@ main.patient-2.top-gray {
       background-color: #61838B;
       position: absolute;
       right: 0;
-      top: 30px;
+      top: 12px;
     }
+}
+.modal-footer .continue button {
+  top:0;
 }
 .continue-2:not(.next) {
   position: relative;
@@ -1161,7 +1178,7 @@ main.patient-2.top-gray {
 //     color:white;
 //   }
 //}
-.col-md-3.yes-no {
+.col-md-5.yes-no,.col-md-3.yes-no {
       border-radius: 5px;
       text-align: center;
       text-transform:uppercase;
@@ -1289,6 +1306,10 @@ main.patient-2.top-gray {
       position: absolute;
       left:0px;
       top: 15px;
+      z-index:99;
+      }
+      &:hover:not(.yes-no) {
+        background: #64a3cf!important;
       }
   }
   &.background-nav-blue {
@@ -1585,14 +1606,30 @@ top: 15px;
   padding: 50px 50px 0 50px!important;
 }
 
+.pro-fix {
+  padding: 0 50px!important;
+}
 .black {
   color:#061922!important;
 }
 .modal-footer.background-nav-blue .continue-2 {
+  &:hover {
+    background: #64a3cf!important;
+  }
   &:before {
     top: 14px;
   }
   &:after {
     top: 14px;
+  }
+}
+
+.mark2 {
+  right:12px;
+}
+
+@media (min-width: 768px){
+.col-sm-offset-1-5 {
+    margin-left: 6.333333%;
   }
 }
