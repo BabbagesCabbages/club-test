@@ -13,10 +13,79 @@ module.exports = BaseView.extend({
         'click #next-page':'nextPage',
         'click image': 'handleClick2'
     },
-
     initialize: function() {
 
     },
+
+    handleClick: function() {
+      // $('.circle').css('display','block');
+      // $('.st0').css('display','block');
+      var elm = $(this);
+      var x = e.pageX - 70 + 'px';
+      var y = e.pageY - 70 + 'px';
+      var img = $('<img class="selecty" src="images/selector.png" alt="selector" />');
+      var div = $('<div>').css({
+          "position": "absolute",
+          "left": x,
+          "top": y
+      });
+
+
+
+      $('.gray').css('color', 'white');
+      $('.gray').addClass('incorrect');
+      $('.correct').click(function(e) {
+        if (e.target) {
+          $('#modalCorrect').modal('show');
+          $('.gray').removeClass('correct');
+          $('.gray').css('color', 'gray');
+          $('#modalIncorrect').modal('hide');
+        }
+        $('.close-modal').click(function(e) {
+          if (e.target) {
+            $('#modalCorrect').modal('hide');
+            $('#modalIncorrect').modal('hide');
+            $('.selecty').remove();
+          }
+        });
+      });
+    },
+
+    handleClick2: function(e) {
+
+        var elm = $(this);
+        var x = e.pageX - 70 + 'px';
+        var y = e.pageY - 70 + 'px';
+        var img = $('<img src="images/selector.png" alt="selector" />');
+        var div = $('<div>').css({
+            "position": "absolute",
+            "left": x,
+            "top": y,
+            "class": "selecty"
+        });
+        div.append(img);
+        $(document.body).append(div);
+
+        $('.gray').css('color', 'white');
+        $('.gray').addClass('incorrect');
+        $('.incorrect').click(function(e) {
+          if (e.target) {
+            $('#modalIncorrect').modal('show');
+            $('.gray').removeClass('correct');
+            $('.gray').css('color', 'gray');
+            $('#modalCorrect').modal('hide');
+          }
+        $('.close-modal').click(function(e) {
+          if (e.target) {
+            $('#modalCorrect').modal('hide');
+            $('#modalIncorrect').modal('hide');
+            $('.selecty').remove();
+          }
+        });
+      });
+
+    },
+
     onBeforeRender: function() {},
 
     onRender: function() {
@@ -28,31 +97,16 @@ module.exports = BaseView.extend({
 
     onBeforeDestroy: function() {},
 
-    handleClick: function() {
-      $('#modalIncorrect').modal('hide');
-      $('.circle').css('display','block');
-      $('.circle2').css('display','block');
-      $('.st0').css('display','block');
-      $('#modalCorrect').modal('show');
-      $('.close-modal').click(function(e) {
-        if (e.target) {
-          $('#modalIncorrect').modal('hide');
-        }
-      });
-    },
-    handleClick2: function() {
-      $('#modalIncorrect').modal('show');
-    },
+
+
     scrollTop: function(){
-    	$('body').animate({ scrollTop: '0' }, 400);  $('body,html').animate({ scrollTop: '0' }, 400);
-    },
-    nextPage: function() {
-      $('#myModal').modal('hide');
-      $('body').removeClass('modal-open');
-      $('.modal-backdrop').remove();
+    	// $('body').animate({ scrollTop: '0' }, 400);  $('body,html').animate({ scrollTop: '0' }, 400);
     },
 
     onDestroy: function() {
+      $('#modalCorrect').modal('hide');
+      $('body').removeClass('modal-open');
+      $('.modal-backdrop').remove();
     }
 
 });
