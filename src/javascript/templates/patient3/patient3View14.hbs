@@ -17,7 +17,7 @@
             <li><span></span></li>
             <li class="border-bottom"><img src="images/icon_ertest_over.png" alt="" /></span> ER Test</li>
           </ul>
-           
+
           <ul>
             <li><span></span></li>
             <li class="border-bottom"><img src="images/icon_her2test_over.png" alt="" /></span> HER2 FISH Test</li>
@@ -59,7 +59,7 @@ Click below to make your selection for next steps. </p>
 
 
                  <!-- Button trigger modal -->
-                 <a class="previous"><button class="select treatment" type="button"data-toggle="modal" data-target="#myModal" >Select Treatment</button></a>
+                 <a class="previous"><button class="select treatment" type="button" data-toggle="modal" data-target="#myModal" >Select Treatment</button></a>
 
 
 
@@ -68,7 +68,19 @@ Click below to make your selection for next steps. </p>
                    <div class="modal-dialog" role="document">
                      <div class="modal-content">
                        <div class="modal-body">
-                       <h2>Select Treatment: That is correct. Based on Brittany’s test results, you have enough information to make a treatment recommendation.</h2>
+                       <h2>That is correct. Based on Brittany’s test results, you have enough information to make a treatment recommendation.</h2>
+                       </div>
+                       <div class="modal-footer background-nav-blue">
+                          <a class="continue-2" data-navigate="patient3view15"><button class="muted" name="button">Continue</button></a>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                   <div class="modal-dialog" role="document">
+                     <div class="modal-content">
+                       <div class="modal-body">
+                       <h2>That is incorrect. You now have enough information to make a treatment recommendation.</h2>
                        </div>
                        <div class="modal-footer background-nav-blue">
                           <a class="continue-2" data-navigate="patient3view15"><button class="muted" name="button">Continue</button></a>
@@ -77,13 +89,12 @@ Click below to make your selection for next steps. </p>
                    </div>
                  </div>
 
-
                </div>
                <div class="col-md-2 line-across">
 
                </div>
                <div class="col-md-4">
-                 <a data-navigate="patient3view15" class="continue next next-test"><button type="button" class="next-test" name="button">Next Test &#8594;</button></a>
+                 <a data-navigate="patient3view15" data-toggle="modal" data-target="#myModal2" class="continue next next-test"><button type="button" class="next-test" name="button">Next Test &#8594;</button></a>
                </div>
              </div>
          </div>
