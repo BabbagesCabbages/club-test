@@ -26,7 +26,7 @@ app = new Marionette.Application({
         });
         Backbone.history.start({
             pushState: false,
-            root: '/'
+            root: ''
         });
 
 
