@@ -11,15 +11,14 @@ module.exports = BaseView.extend({
         'click .continue': 'scrollTop',
         'click .cancer': 'handleClick',
         'click #next-page':'nextPage',
-        'click image': 'handleClick2'
+        'click image': 'handleClick2',
     },
     initialize: function() {
 
     },
 
-    handleClick: function() {
-      // $('.circle').css('display','block');
-      // $('.st0').css('display','block');
+    handleClick: function(e) {
+      $('.gray').removeClass('incorrect');
       var elm = $(this);
       var x = e.pageX - 70 + 'px';
       var y = e.pageY - 70 + 'px';
@@ -27,25 +26,30 @@ module.exports = BaseView.extend({
       var div = $('<div>').css({
           "position": "absolute",
           "left": x,
-          "top": y
+          "top": y,
+          "class": "selecty"
       });
-
-
+      div.append(img);
+      $(document.body).append(div);
 
       $('.gray').css('color', 'white');
-      $('.gray').addClass('incorrect');
+      $('.gray').addClass('correct');
       $('.correct').click(function(e) {
         if (e.target) {
+
           $('#modalCorrect').modal('show');
           $('.gray').removeClass('correct');
-          $('.gray').css('color', 'gray');
           $('#modalIncorrect').modal('hide');
+          $('.selecty').remove();
+          $('#modalCorrect').css('display', 'block');
         }
         $('.close-modal').click(function(e) {
           if (e.target) {
             $('#modalCorrect').modal('hide');
             $('#modalIncorrect').modal('hide');
             $('.selecty').remove();
+            $('body').removeClass('modal-open');
+            $('.modal-backdrop').remove();
           }
         });
       });
@@ -56,7 +60,7 @@ module.exports = BaseView.extend({
         var elm = $(this);
         var x = e.pageX - 70 + 'px';
         var y = e.pageY - 70 + 'px';
-        var img = $('<img src="images/selector.png" alt="selector" />');
+        var img = $('<img class="selecty" src="images/selector.png" alt="selector" />');
         var div = $('<div>').css({
             "position": "absolute",
             "left": x,
@@ -71,15 +75,18 @@ module.exports = BaseView.extend({
         $('.incorrect').click(function(e) {
           if (e.target) {
             $('#modalIncorrect').modal('show');
-            $('.gray').removeClass('correct');
             $('.gray').css('color', 'gray');
-            $('#modalCorrect').modal('hide');
+            $('.selecty').remove();
+            $('.gray').removeClass('incorrect');
           }
         $('.close-modal').click(function(e) {
           if (e.target) {
-            $('#modalCorrect').modal('hide');
-            $('#modalIncorrect').modal('hide');
+            // $('#modalCorrect').modal('hide');
+            // $('#modalIncorrect').modal('hide');
             $('.selecty').remove();
+            $('body').removeClass('modal-open');
+            $('.modal-backdrop').remove();
+            $('.gray').removeClass('incorrect');
           }
         });
       });
