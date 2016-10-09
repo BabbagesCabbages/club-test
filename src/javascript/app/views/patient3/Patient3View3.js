@@ -47,6 +47,8 @@ module.exports = BaseView.extend({
             $('#modalIncorrect1').modal('hide');
             $('#modalIncorrect2').modal('hide');
             $('#modalIncorrect3').modal('hide');
+            $('body').removeClass('modal-open');
+            $('.modal-backdrop').remove();
           }
         });
       });
@@ -72,6 +74,8 @@ module.exports = BaseView.extend({
             $('#modalIncorrect1').modal('hide');
             $('#modalIncorrect2').modal('hide');
             $('#modalIncorrect3').modal('hide');
+            $('body').removeClass('modal-open');
+            $('.modal-backdrop').remove();
           }
         });
       });
@@ -96,6 +100,8 @@ module.exports = BaseView.extend({
             $('#modalIncorrect1').modal('hide');
             $('#modalIncorrect2').modal('hide');
             $('#modalIncorrect3').modal('hide');
+            $('body').removeClass('modal-open');
+            $('.modal-backdrop').remove();
           }
         });
       });
@@ -122,6 +128,8 @@ module.exports = BaseView.extend({
             $('#modalIncorrect1').modal('hide');
             $('#modalIncorrect2').modal('hide');
             $('#modalIncorrect3').modal('hide');
+            $('body').removeClass('modal-open');
+            $('.modal-backdrop').remove();
           }
         });
       });
@@ -129,7 +137,7 @@ module.exports = BaseView.extend({
     },
 
     scrollTop: function(){
-    	// $('body').animate({ scrollTop: '0' }, 400);  $('body,html').animate({ scrollTop: '0' }, 400); 
+    	// $('body').animate({ scrollTop: '0' }, 400);  $('body,html').animate({ scrollTop: '0' }, 400);
     },
 
     onDestroy: function() {
