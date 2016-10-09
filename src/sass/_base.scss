@@ -147,7 +147,7 @@ main {
     // max-width: 606px;
     margin-bottom:3em;
     p {
-      padding: 0em 0em 1em 0;
+      padding: 50px
     }
     h2 {
       // margin-left: 1.4em;
@@ -220,7 +220,7 @@ height: 18px;
 .svg-test {
   padding:0!important;
   p:first-of-type {
-    padding:50px!important;
+    padding:50px;
   }
   p {
     padding:15px;
@@ -266,7 +266,7 @@ height: 18px;
 .modal-body {
   border-top: 10px solid $pink;
   text-align:left;
-  padding:60px!important;
+  padding:50px!important;
   &.pat2 {
     border-top: 10px solid #753fb7!important;
 
@@ -611,11 +611,14 @@ top: -4px;
     padding:25px 50px;
   }
 }
-
+.modal-body {
+  h2 {
+    padding: 0!important;
+  }
+}
 .svg-test .modal-body {
   h2 {
-    padding:0;
-    margin-bottom:15px;
+    padding: 0!important;
   }
   p {
     padding:0!important;
@@ -1045,6 +1048,7 @@ top: -4px;
   background: $header-gray;
   height: 150px;
   padding-top: 30px;
+  padding-right: 50px!important;
   .col-md-3 {
     text-align:right;
   }
@@ -1395,6 +1399,9 @@ font-weight: 100;
 .m-bot-25 {
   margin-bottom: 50px!important;
 }
+.m-bot-6 {
+  margin-bottom: 6em;
+}
 iframe {
   width: 100%;
   height: 600px;
@@ -1548,6 +1555,10 @@ top: 15px;
 .multi-pad {
   padding: 0 50px 50px 50px!important;
 }
+.fig-fix {
+  padding: 50px 50px 0 50px!important;
+}
+
 .pick-fix {
   top:-21px;
 }
@@ -1561,4 +1572,12 @@ top: 15px;
 
 .black {
   color:#061922!important;
+}
+.modal-footer.background-nav-blue .continue-2 {
+  &:before {
+    top: 14px;
+  }
+  &:after {
+    top: 14px;
+  }
 }
