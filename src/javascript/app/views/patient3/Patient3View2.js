@@ -31,7 +31,8 @@ module.exports = BaseView.extend({
       });
       div.append(img);
       $(document.body).append(div);
-
+      $('image').css('pointer-events', 'none');
+      $('image').css('curson', 'default');
       $('.gray').css('color', 'white');
       $('.gray').addClass('correct');
       $('.gray').addClass('whitey');
@@ -52,6 +53,8 @@ module.exports = BaseView.extend({
             $('.selecty').remove();
             $('body').removeClass('modal-open');
             $('.modal-backdrop').remove();
+            $('image').css('pointer-events', 'auto');
+            $('image').css('curson', 'pointer');
           }
         });
       });
@@ -71,7 +74,9 @@ module.exports = BaseView.extend({
         });
         div.append(img);
         $(document.body).append(div);
-
+        $('image').css('pointer-events', 'none');
+        $('image').css('curson', 'default');
+        $('.cancer').css('pointer-events', 'none');
         $('.gray').css('color', 'white');
         $('.button.muted').css('color', 'white');
         $('.gray').addClass('incorrect');
@@ -85,12 +90,15 @@ module.exports = BaseView.extend({
           }
         $('.close-modal').click(function(e) {
           if (e.target) {
-            // $('#modalCorrect').modal('hide');
-            // $('#modalIncorrect').modal('hide');
+            $('#modalCorrect').modal('hide');
+            $('#modalIncorrect').modal('hide');
             $('.selecty').remove();
             $('body').removeClass('modal-open');
             $('.modal-backdrop').remove();
             $('.gray').removeClass('incorrect');
+            $('image').css('pointer-events', 'auto');
+            $('image').css('curson', 'pointer');
+            $('.cancer').css('pointer-events', 'auto');
           }
         });
       });
@@ -108,6 +116,11 @@ module.exports = BaseView.extend({
 
     onBeforeDestroy: function() {},
 
+    nextPage: function() {
+      $('#modalIncorrect').modal('hide');
+      $('body').removeClass('modal-open');
+      $('.modal-backdrop').remove();
+    },
 
 
     scrollTop: function(){
