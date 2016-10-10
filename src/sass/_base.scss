@@ -1108,7 +1108,7 @@ main.patient-2.top-gray {
     top: -6px;
     position: relative;
     &:hover {
-      background: #64a3cf!important;
+      color: #64a3cf!important;
     }
   }
   &:hover {
@@ -1117,11 +1117,11 @@ main.patient-2.top-gray {
   &.background-nav-blue {
     padding: 14px 50px;
     &:hover {
-      background: #64a3cf!important;
+      color: #64a3cf!important;
     }
     button {
       &:hover {
-      background: #64a3cf!important;
+      color: #64a3cf!important;
       }
     }
   }
@@ -1208,26 +1208,27 @@ main.patient-2.top-gray {
     text-transform: uppercase;
     font-size:17px;
     letter-spacing: 4px;
+    color:white;
         &.select {
           position: relative;
           top: 0px;
           left: 10px;
         }
         &:hover {
-          color:white;
+          color:#64a3cf;
         }
   }
   .continue:not(~.yes-no) {
     position: relative;
-    color: white!important;
+    color: white;
     button {
       letter-spacing: 4px;
       font-size: 17px;
       text-transform: uppercase;
-      color:white!important;
+      color:white;
     }
     &:hover {
-      color:white!important;
+      color:white;
     }
 
 
@@ -1310,7 +1311,7 @@ main.patient-2.top-gray {
       z-index:99;
       }
       &:hover:not(.yes-no) {
-        background: #64a3cf!important;
+        color: #64a3cf!important;
       }
   }
   &.background-nav-blue {
@@ -1622,7 +1623,7 @@ top: 15px;
 }
 .modal-footer.background-nav-blue .continue-2 {
   &:hover {
-    background: #64a3cf!important;
+    color: #64a3cf!important;
   }
   &:before {
     top: 14px;
