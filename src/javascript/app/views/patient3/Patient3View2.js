@@ -12,9 +12,14 @@ module.exports = BaseView.extend({
         'click .cancer': 'handleClick',
         'click #next-page':'nextPage',
         'click image': 'handleClick2',
+        'click previous': 'noCircles'
     },
     initialize: function() {
         $('.gray').css('color', 'gray');
+    },
+
+    noCircles: function() {
+      $('.selecty').remove();
     },
 
     handleClick: function(e) {

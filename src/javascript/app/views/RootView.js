@@ -23,17 +23,19 @@ module.exports = Marionette.LayoutView.extend({
     },
 
     initialize: function() {
-      
+
         this.setListeners();
         this.$el.removeClass(constants.INITING_CLASS);
         $(document).keydown(function(e) {
             switch(e.which) {
                 case 37: // left
                 $('.previous').trigger('click');
+                  $('.selecty').remove();
                 break;
 
                 case 39: // right
                 $('.continue').trigger('click');
+                  $('.selecty').remove();
                 break;
 
                 default: return; // exit this handler for other keys
