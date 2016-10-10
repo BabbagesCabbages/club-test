@@ -8,7 +8,7 @@ module.exports = BaseView.extend({
     template: template,
     ui: {},
     events: {
-        'click .continue': 'scrollTop'
+            // 'click .continue': 'scrollTop'
     },
 
     initialize: function() {
@@ -26,7 +26,7 @@ module.exports = BaseView.extend({
     onBeforeDestroy: function() {},
 
     scrollTop: function(){
-    	$('body').animate({ scrollTop: '0' }, 400);  $('body,html').animate({ scrollTop: '0' }, 400); 
+    	$('body').animate({ scrollTop: '0' }, 400);  $('body,html').animate({ scrollTop: '0' }, 400);
     },
 
     onDestroy: function() {

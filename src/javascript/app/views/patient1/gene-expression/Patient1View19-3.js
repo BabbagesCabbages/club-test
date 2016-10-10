@@ -1,5 +1,5 @@
 var BaseView = require('../../BaseView');
-var template = require('templates/patient1/patient1View7-3.hbs');
+var template = require('templates/patient1/patient1View19-3.hbs');
 
 module.exports = BaseView.extend({
 
@@ -8,7 +8,7 @@ module.exports = BaseView.extend({
     template: template,
     ui: {},
     events: {
-        // 'click .continue': 'scrollTop'
+        'click .continue': 'scrollTop'
     },
 
     initialize: function() {
