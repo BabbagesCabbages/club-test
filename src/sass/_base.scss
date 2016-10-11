@@ -445,7 +445,7 @@ top: 0px;
       max-width: 72px;
 
       &.finished {
-        left: -48px;
+      left: -48px;
       top: -1px;
       cursor:default!important;
       pointer-events: none;
@@ -1037,6 +1037,7 @@ display: none;
 }
 .breadcrumb.biopsy {
     height: 265px;
+    border-left: 40px solid #DAE5EA;
 }
 #loading{
     position:fixed;
@@ -1436,6 +1437,7 @@ iframe {
 }
 .steps-13 {
   height: 338px!important;
+  border-left: 40px solid #DAE5EA !important;
 }
 
 .arrow-start {
