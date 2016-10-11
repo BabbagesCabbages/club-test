@@ -1127,6 +1127,9 @@ main.patient-2.top-gray {
       }
     }
   }
+  &.background-nav-blue:not(.butt-fix) {
+    padding:0;
+  }
 
     &:after {
       content: '';

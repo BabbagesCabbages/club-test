@@ -8,7 +8,7 @@ module.exports = BaseView.extend({
     template: template,
     ui: {},
     events: {
-            // 'click .continue': 'scrollTop'
+            'click .continue': 'scrollTop'
     },
 
     initialize: function() {
