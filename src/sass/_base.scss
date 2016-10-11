@@ -52,6 +52,33 @@ path {
 .top-nav {
   background-color: $dark-blue;
   color: white;
+  .patient-nav {
+    position: absolute;
+    left:-30px;
+    top: 4px;
+    ul {
+      li {
+        display: inline;
+        font-size: 12px;
+        img {
+          border-radius: 150px;
+          margin-right: 10px;
+          opacity: 0.5;
+        }
+        .border-bottom {
+          border-bottom: 2px solid $white;
+        }
+        .uppercase {
+          text-transform: uppercase;
+        }
+      }
+      .active {
+        img {
+          opacity: 1;
+        }
+      }
+    }
+  }
 }
 #side-navs-fixed {
       margin-right: 10px;
