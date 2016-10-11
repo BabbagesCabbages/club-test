@@ -54,9 +54,9 @@ module.exports = BaseView.extend({
       $('.size-3-active').fadeOut('fast');
     },
 
-    scrollTop: function(){
-    	$('body').animate({ scrollTop: '0' }, 400);  $('body,html').animate({ scrollTop: '0' }, 400);
-    },
+    // scrollTop: function(){
+    // 	$('body').animate({ scrollTop: '0' }, 400);  $('body,html').animate({ scrollTop: '0' }, 400);
+    // },
 
     onDestroy: function() {
     }
