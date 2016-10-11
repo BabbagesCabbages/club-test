@@ -19,8 +19,7 @@ module.exports = BaseView.extend({
     },
 
     noCircles: function() {
-
-      $('.selecty').remove();
+      $('img .selecty').remove();
     },
 
     handleClick: function(e) {
@@ -130,6 +129,7 @@ module.exports = BaseView.extend({
       $('#modalCorrect').modal('hide');
       $('body').removeClass('modal-open');
       $('.modal-backdrop').remove();
+      $('.selecty').remove();
     }
 
 });

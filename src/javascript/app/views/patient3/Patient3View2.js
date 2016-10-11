@@ -136,6 +136,7 @@ module.exports = BaseView.extend({
       $('#modalCorrect').modal('hide');
       $('body').removeClass('modal-open');
       $('.modal-backdrop').remove();
+      $('.selecty').remove();
     }
 
 });
