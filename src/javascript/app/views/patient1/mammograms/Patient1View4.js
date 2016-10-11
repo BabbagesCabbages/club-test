@@ -8,9 +8,8 @@ module.exports = BaseView.extend({
     template: template,
     ui: {},
     events: {
-        'click .continue': 'scrollTop',
+        'click .continue:not(.not-this)': 'scrollTop',
         'click .cancer': 'handleClick',
-        'click #next-page':'nextPage',
         'click image': 'handleClick2',
         'click previous': 'noCircles'
     },
