@@ -1097,6 +1097,29 @@ display: none;
             }
           }
         }
+        &:nth-child(15) {
+          top: 313px;
+          left: 247px;
+          &:after {
+            content: '';
+            width: 70px;
+            height: 2px;
+            background-color: #B9C5CB;
+            position: absolute;
+            left: -72px;
+            top: 13px;
+          }
+          &.completed {
+            &:after {
+              background-color: $pink!important;
+            }
+          }
+          &.active {
+            &:after {
+              background-color: $pink;
+            }
+          }
+        }
       }
     }
   }
