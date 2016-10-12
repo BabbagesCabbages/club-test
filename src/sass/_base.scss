@@ -64,6 +64,7 @@ path {
           border-radius: 150px;
           margin-right: 10px;
           opacity: 0.5;
+          margin-left:5px;
         }
         .border-bottom {
           border-bottom: 2px solid $white;
@@ -1686,18 +1687,4 @@ top: 15px;
 
 .continue-fix:before, .continue-fix:after{
       top: 9px!important;
-}
-
-.patient-nav {
-  ul {
-    li:nth-child(1) {
-
-    }
-    li:nth-child(1) {
-
-    }
-    li:nth-child(1) {
-
-    }
-  }
 }
