@@ -61,7 +61,9 @@ path {
     ul {
       li {
         display: inline-block;
-        font-size: 12px;
+       font-size: 12px;
+       vertical-align: top;
+       white-space: nowrap;
         img {
           border-radius: 150px;
           margin-right: 10px;
@@ -1049,6 +1051,52 @@ display: none;
             }
           }
         }
+        &:nth-child(13) {
+          top: 313px;
+          left: 45px;
+          &:after {
+            content: '';
+            width: 2px;
+            height: 52px;
+            background-color: #B9C5CB;
+            position: absolute;
+            right: 11px;
+            top: -52px;
+          }
+          &.completed {
+            &:after {
+              background-color: $pink!important;
+            }
+          }
+          &.active {
+            &:after {
+              background-color: $pink;
+            }
+          }
+        }
+        &:nth-child(14) {
+          top: 313px;
+          left: 146px;
+          &:after {
+            content: '';
+            width: 70px;
+            height: 2px;
+            background-color: #B9C5CB;
+            position: absolute;
+            left: -72px;
+            top: 13px;
+          }
+          &.completed {
+            &:after {
+              background-color: $pink!important;
+            }
+          }
+          &.active {
+            &:after {
+              background-color: $pink;
+            }
+          }
+        }
       }
     }
   }
@@ -1468,7 +1516,7 @@ iframe {
   height: 600px;
 }
 .steps-13 {
-  height: 338px!important;
+  height: 381px!important;
   border-left: 40px solid #DAE5EA !important;
 }
 .steps-6 {
