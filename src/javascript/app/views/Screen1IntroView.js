@@ -63,6 +63,11 @@ module.exports = BaseView.extend({
     if (Function('/*@cc_on return document.documentMode===10@*/')()){
       $('#modalBrowser').modal('show');
     };
+    
+$('.pat-nav-1').css('display','none');
+$('.pat-nav-2').css('display','none');
+$('.pat-nav-3').css('display','none');
+
 
     },
 

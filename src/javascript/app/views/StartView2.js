@@ -19,6 +19,11 @@ module.exports = BaseView.extend({
       $('#myModal').modal('hide');
       $('body').removeClass('modal-open');
       $('.modal-backdrop').remove();
+
+      $('.pt-1').removeClass('active');
+      $('.pat-nav-1').css('display','none');
+      $('.pat-nav-2').css('display','none');
+      $('.pat-nav-3').css('display','none');
     },
 
     onBeforeRender: function() {},

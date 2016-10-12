@@ -16,7 +16,10 @@ module.exports = BaseView.extend({
     initialize: function() {
 
       $('.spacer').css('display', 'none');
-
+      $('.pt-2').removeClass('active');
+      $('.pat-nav-1').css('display','none');
+      $('.pat-nav-2').css('display','none');
+      $('.pat-nav-3').css('display','none');
     },
 
     onBeforeRender: function() {},

@@ -17,6 +17,11 @@ module.exports = BaseView.extend({
         $('body').animate({
             scrollTop: '0'
         }, 400);
+
+        $('.pt-1').addClass('active');
+        $('.pat-nav-1').css('display','inline');
+        $('.pat-nav-2').css('display','none');
+        $('.pat-nav-3').css('display','none');
     },
     onBeforeRender: function() {},
 
