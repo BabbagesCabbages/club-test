@@ -12,6 +12,10 @@ module.exports = BaseView.extend({
     },
 
     initialize: function() {
+      var isFirefox = typeof InstallTrigger !== 'undefined';
+      if(isFirefox){
+        $('.answer-1:after').css('right','6px');
+      }
 
     },
     onBeforeRender: function() {},
@@ -26,7 +30,7 @@ module.exports = BaseView.extend({
     onBeforeDestroy: function() {},
 
     scrollTop: function(){
-    	$('body').animate({ scrollTop: '0' }, 400);  $('body,html').animate({ scrollTop: '0' }, 400); 
+    	$('body').animate({ scrollTop: '0' }, 400);  $('body,html').animate({ scrollTop: '0' }, 400);
     },
 
     onDestroy: function() {
