@@ -39,6 +39,7 @@ module.exports = BaseView.extend({
       $('.size-4-active').css('display', 'none');
       $('.gray').css('color', 'white');
       $('.gray').addClass('incorrect1');
+      $('.size-1,.size-2,.size-3,.size-4').css('pointer-events', 'none');
       $('.incorrect1').click(function(e) {
         if (e.target) {
           $('#modalIncorrect1').modal('show');$('#modalIncorrect1').modal({backdrop: 'static',});
@@ -58,6 +59,8 @@ module.exports = BaseView.extend({
             $('#modalIncorrect1').modal('hide');
             $('#modalIncorrect2').modal('hide');
             $('#modalIncorrect3').modal('hide');
+            $('.size-1,.size-2,.size-3,.size-4').css('pointer-events', 'auto');
+
           }
         });
       });
@@ -75,6 +78,7 @@ module.exports = BaseView.extend({
       $('.size-4-active').css('display', 'none');
       $('.gray').css('color', 'white');
       $('.gray').addClass('incorrect2');
+      $('.size-1,.size-2,.size-3,.size-4').css('pointer-events', 'none');
       $('.incorrect2').click(function(e) {
         if (e.target) {
           $('#modalCorrect').modal('hide');
@@ -94,6 +98,8 @@ module.exports = BaseView.extend({
             $('#modalIncorrect1').modal('hide');
             $('#modalIncorrect2').modal('hide');
             $('#modalIncorrect3').modal('hide');
+            $('.size-1,.size-2,.size-3,.size-4').css('pointer-events', 'auto');
+
           }
         });
       });
@@ -110,6 +116,7 @@ module.exports = BaseView.extend({
       $('.size-4-active').css('display', 'none');
       $('.gray').css('color', 'white');
       $('.gray').addClass('correct');
+      $('.size-1,.size-2,.size-3,.size-4').css('pointer-events', 'none');
       $('.correct').click(function(e) {
         if (e.target) {
           $('#modalCorrect').modal('hide');
@@ -129,6 +136,8 @@ module.exports = BaseView.extend({
             $('#modalIncorrect1').modal('hide');
             $('#modalIncorrect2').modal('hide');
             $('#modalIncorrect3').modal('hide');
+            $('.size-1,.size-2,.size-3,.size-4').css('pointer-events', 'auto');
+
           }
         });
       });
@@ -147,6 +156,7 @@ module.exports = BaseView.extend({
       $('.size-3-active').css('display', 'none');
       $('.gray').css('color', 'white');
       $('.gray').addClass('incorrect3');
+      $('.size-1,.size-2,.size-3,.size-4').css('pointer-events', 'none');
       $('.incorrect3').click(function(e) {
         if (e.target) {
           $('#modalCorrect').modal('hide');
@@ -166,6 +176,7 @@ module.exports = BaseView.extend({
             $('#modalIncorrect1').modal('hide');
             $('#modalIncorrect2').modal('hide');
             $('#modalIncorrect3').modal('hide');
+            $('.size-1,.size-2,.size-3,.size-4').css('pointer-events', 'auto');
           }
         });
       });
