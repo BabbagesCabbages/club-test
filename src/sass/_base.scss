@@ -239,6 +239,11 @@ display:inline;
   width: 17px;
 height: 18px;
 }
+.small-icon img {
+  width: 23px;
+  display:inline;
+
+}
 #pick-size {
 //   width: 100%;
 //   margin-top: -14em;
@@ -1767,4 +1772,8 @@ top: 15px;
 
 .continue-fix:before, .continue-fix:after{
       top: 9px!important;
+}
+
+.background-green .border-bottom.whitey {
+  border-bottom:none;
 }
