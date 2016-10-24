@@ -23,7 +23,7 @@ module.exports = Marionette.LayoutView.extend({
     },
 
     initialize: function() {
-      
+
         this.setListeners();
         this.$el.removeClass(constants.INITING_CLASS);
         $(document).keydown(function(e) {

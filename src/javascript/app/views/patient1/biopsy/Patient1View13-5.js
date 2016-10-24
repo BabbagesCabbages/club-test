@@ -12,7 +12,7 @@ module.exports = BaseView.extend({
     },
 
     initialize: function() {
-
+    
     },
 
     onBeforeRender: function() {},
