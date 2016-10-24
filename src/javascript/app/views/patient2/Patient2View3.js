@@ -60,7 +60,10 @@ module.exports = BaseView.extend({
             $('#modalIncorrect2').modal('hide');
             $('#modalIncorrect3').modal('hide');
             $('.size-1,.size-2,.size-3,.size-4').css('pointer-events', 'auto');
-
+            $("#modalCorrect").removeClass('fade').modal('hide');
+            $("#modalIncorrect1").removeClass('fade').modal('hide');
+            $("#modalIncorrect2").removeClass('fade').modal('hide');
+            $("#modalIncorrect3").removeClass('fade').modal('hide');
           }
         });
       });
@@ -99,7 +102,10 @@ module.exports = BaseView.extend({
             $('#modalIncorrect2').modal('hide');
             $('#modalIncorrect3').modal('hide');
             $('.size-1,.size-2,.size-3,.size-4').css('pointer-events', 'auto');
-
+            $("#modalCorrect").removeClass('fade').modal('hide');
+            $("#modalIncorrect1").removeClass('fade').modal('hide');
+            $("#modalIncorrect2").removeClass('fade').modal('hide');
+            $("#modalIncorrect3").removeClass('fade').modal('hide');
           }
         });
       });
@@ -138,7 +144,10 @@ module.exports = BaseView.extend({
             $('#modalIncorrect2').modal('hide');
             $('#modalIncorrect3').modal('hide');
             $('.size-1,.size-2,.size-3,.size-4').css('pointer-events', 'auto');
-
+            $("#modalCorrect").removeClass('fade').modal('hide');
+            $("#modalIncorrect1").removeClass('fade').modal('hide');
+            $("#modalIncorrect2").removeClass('fade').modal('hide');
+            $("#modalIncorrect3").removeClass('fade').modal('hide');
           }
         });
       });
@@ -178,6 +187,10 @@ module.exports = BaseView.extend({
             $('#modalIncorrect2').modal('hide');
             $('#modalIncorrect3').modal('hide');
             $('.size-1,.size-2,.size-3,.size-4').css('pointer-events', 'auto');
+            $("#modalCorrect").removeClass('fade').modal('hide');
+            $("#modalIncorrect1").removeClass('fade').modal('hide');
+            $("#modalIncorrect2").removeClass('fade').modal('hide');
+            $("#modalIncorrect3").removeClass('fade').modal('hide');
           }
         });
       });
