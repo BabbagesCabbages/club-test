@@ -3,14 +3,16 @@ var constants = require('utils/constants');
 var attachFastClick = require('fastclick');
 var Backbone = require('backbone');
 
+
+var Tabletop = require('tabletop');
+
 module.exports = Marionette.LayoutView.extend({
 
     el: 'body',
 
     regions: {
         regionMain: '#region-main',
-        contentMain: '#content-main',
-        sideNav: '#side-navs'
+        contentMain: '#content-main'
     },
 
     ui: {
@@ -26,46 +28,24 @@ module.exports = Marionette.LayoutView.extend({
 
         this.setListeners();
         this.$el.removeClass(constants.INITING_CLASS);
-        $(document).keydown(function(e) {
-            switch(e.which) {
-                case 37: // left
-                $('.previous').trigger('click');
-                  $('.selecty').remove();
-                break;
-
-                case 39: // right
-                $('.continue').trigger('click');
-                  $('.selecty').remove();
-                break;
-
-                default: return; // exit this handler for other keys
-            }
-            e.preventDefault(); // prevent the default action (scroll / move caret)
-        });
 
 
-      $(document).ready(function () {
-        if (window.innerWidth < 994) {
-            $("#modalBrowserWidth").modal('show');
-        }
-        else if (window.innerWidth > 994) {
-            $("#modalBrowserWidth").modal('hide');
-        }
-          $(window).resize(function () {
 
-        if (window.innerWidth < 994) {
-            $("#modalBrowserWidth").modal('show');
-        }
-        else if (window.innerWidth > 994) {
-            $("#modalBrowserWidth").modal('hide');
-        }
-        });
-      });
+    Tabletop.init( { key: '1c6T8w924B_HvesVJZfXLtq2usG55NwwMQFt7eyoIkFs',
+                     callback: function(data, tabletop) { console.log(JSON.stringify(data)) },
+                     simpleSheet: true } )
+
 
       var loadUrl = Backbone.History.prototype.loadUrl;
           Backbone.History.prototype.loadUrl = function() {
           if (!loadUrl.apply(this, arguments)) this.trigger('route-not-found');
         };
+
+
+
+      
+
+
     },
     // closeModal: function() {
     //   $('#modalBrowserWidth').modal('hide');

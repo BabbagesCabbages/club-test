@@ -1,20 +1,24 @@
 var BaseView = require('./BaseView');
 var template = require('templates/index.hbs');
 
+var IndexModel = require('../models/indexModel');
+var Tabletop = require ('tabletop');
+var indexModel = new IndexModel();
+
 
 module.exports = BaseView.extend({
 
     className: 'container-fluid',
 
     template: template,
-
+    model: indexModel,
     ui: {},
     events: {
 
     },
 
     initialize: function() {
-
+    
     },
 
     onBeforeRender: function() {},
@@ -28,9 +32,6 @@ module.exports = BaseView.extend({
     onBeforeDestroy: function() {},
 
     onDestroy: function() {
-      $('#myModal').modal('hide');
-      $('body').removeClass('modal-open');
-      $('.modal-backdrop').remove();
 
     }
 

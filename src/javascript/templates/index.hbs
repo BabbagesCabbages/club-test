@@ -1,10 +1,80 @@
 
 
-<div class="row">
-  <div class="col-sm-3 no-pad">
-    <div id="side-navs"></div>
-  </div>
-  <main id="content-main" class="col-sm-6"></main>
-</div>
 
 {{ messages.text }}
+
+    <ul>
+      <li style="padding-top: 13px;"><h3>{{ intro1.title }}</h3></li>
+      <li style="padding-bottom:1em;">{{ intro1.text}}</li>
+    </ul>
+
+
+    <ul>
+      <li style="padding-top: 13px;"><h3>{{ intro2.title }}</h3></li>
+      <li style="padding-bottom:1em;">{{ intro2.text}}</li>
+    </ul>
+
+
+    <ul>
+      <li style="padding-top: 13px;"><h3>{{ intro3.title }}</h3></li>
+      <li style="padding-bottom:1em;">{{ intro3.text}}</li>
+    </ul>
+
+
+
+        <h1>A Backbone.js example about cats I've met</h1>
+    <p>As you can tell, you can make a very complicated web page with this stuff.</p>
+
+
+          <div class="entry">
+            <h2>{{ Name }}</h2>
+            <h3>{{ Age }}</h3>
+            <div class="body">
+            {{ Description }}
+            </div>
+          </div>
+          <div>
+            <form id="gform" method="POST" class="pure-form pure-form-stacked"
+            action="https://script.google.com/macros/s/AKfycbwvsoNhttSdMUbS19VMMctENs5oSQXg8Ar960xWjh9X68SFRpk/exec" >
+              <!-- change the form action to your script url -->
+
+              <fieldset class="pure-group">
+                <label for="name">Name: </label>
+                <input id="name" name="name" placeholder="What your Mom calls you" />
+              </fieldset>
+
+              <fieldset class="pure-group">
+                <label for="message">Message: </label>
+                <textarea id="message" name="message" rows="10"
+                placeholder="Tell us what's on your mind..."></textarea>
+              </fieldset>
+
+              <fieldset class="pure-group">
+                <label for="email"><em>Your</em> Email Address:</label>
+                <input id="email" name="email" type="email" value=""
+                required placeholder="your.name@email.com"/>
+                <span id="email-invalid" style="visibility:hidden">
+                  Must be a valid email address</span>
+              </fieldset>
+
+              <fieldset class="pure-group">
+                <label for="color">Favourite Color: </label>
+                <input id="color" name="color" placeholder="green" />
+              </fieldset>
+
+              <button class="button-success pure-button button-xlarge">
+                <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+
+            </form>
+
+            <!-- Customise the Thankyou Message People See when they submit the form: -->
+
+
+            <!-- Submit the Form to Google Using "AJAX" -->
+
+
+
+
+
+
+        <div id="content"></div>

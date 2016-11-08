@@ -16,17 +16,7 @@ module.exports = Marionette.ItemView.extend({
   events: {},
 
   initialize: function() {
-    var  sn = $(".side-nav");
-        sns = "side-nav-scrolled";
 
-    $(window).scroll(function() {
-      if( $(this).scrollTop() > 125 ) {
-        sn.addClass(sns);
-      } else {
-        sn.removeClass(sns);
-      }
-    });
-    this.render();
 
 
 
