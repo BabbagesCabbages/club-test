@@ -1,5 +1,5 @@
 var BaseView = require('./BaseView');
-var template = require('templates/index.hbs');
+var template = require('templates/screen2.hbs');
 
 var IndexModel = require('../models/indexModel');
 
@@ -12,6 +12,7 @@ module.exports = BaseView.extend({
 
     template: template,
     model: indexModel,
+
     ui: {},
     events: {
       'click #quizYes': 'goToYes',
@@ -23,8 +24,6 @@ module.exports = BaseView.extend({
     },
 
     goToYes: function() {
-      $('#region-main').animate({left : '-150%' },800);
-      $('#region-main').addClass('animated');
 
     },
 
@@ -34,25 +33,21 @@ module.exports = BaseView.extend({
     },
     onBeforeRender: function() {},
 
-    onRender: function() {},
+    onRender: function() {
+
+    },
 
     onBeforeShow: function() {},
 
-    onShow: function() {},
+    onShow: function() {
+      
 
-    onBeforeDestroy: function() {
-      // $('#region-main').animate({left : '0%' },800);
     },
 
+    onBeforeDestroy: function() {},
+
     onDestroy: function() {
-      var region = $('#region-main');
-      if (region.hasClass('animated')) {
-        region.css('left','150%');
-        setTimeout(function() {
-            $('#region-main').animate({left : '0%' },800);
-        },100)
-        region.removeClass('animated');
-      }
+
     }
 
 });

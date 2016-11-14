@@ -12,7 +12,6 @@ module.exports = Marionette.LayoutView.extend({
 
     regions: {
         regionMain: '#region-main',
-        contentMain: '#content-main'
     },
 
     ui: {
@@ -43,7 +42,7 @@ module.exports = Marionette.LayoutView.extend({
 
 
 
-      
+
 
 
     },
@@ -69,10 +68,13 @@ module.exports = Marionette.LayoutView.extend({
     },
 
     onNavigate: function(url) {
+      setTimeout(function() {
         app.trigger('navigate', {
             url: url,
             trigger: true
         });
+      },810);
+
 
     }
 

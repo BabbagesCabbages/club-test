@@ -1,7 +1,7 @@
 
 
 
-{{ messages.text }}
+<!-- {{ messages.text }}
 
     <ul>
       <li style="padding-top: 13px;"><h3>{{ intro1.title }}</h3></li>
@@ -18,25 +18,32 @@
     <ul>
       <li style="padding-top: 13px;"><h3>{{ intro3.title }}</h3></li>
       <li style="padding-bottom:1em;">{{ intro3.text}}</li>
-    </ul>
+    </ul> -->
 
 
 
-        <h1>A Backbone.js example about cats I've met</h1>
-    <p>As you can tell, you can make a very complicated web page with this stuff.</p>
+
+    <div id="quiz" class="quiz__container">
+      <header class="quiz-header">
+      	<h1>Are you new to HZ?</h1>
+      </header>
+    	<div class="quiz__content">
+    		<div id="questionHeader" class="question__top"></div>
+    		<div id="questionBottom" class="question__bottom"></div>
+    	</div>
+    	<nav id="quizNavigation" class="quiz__nav">
+    		<button id="quizYes" data-navigate="screen2" class="btn btn-warning">Define New?</button>
+        <button id="quizNo" data-navigate="screen3" class="btn btn-warning">No Way!</button>
+    	</nav>
+    </div>
 
 
-          <div class="entry">
-            <h2>{{ Name }}</h2>
-            <h3>{{ Age }}</h3>
-            <div class="body">
-            {{ Description }}
-            </div>
-          </div>
-          <div>
-            <form id="gform" method="POST" class="pure-form pure-form-stacked"
+
+
+
+
+            <!-- <form id="gform" method="POST" class="pure-form pure-form-stacked"
             action="https://script.google.com/macros/s/AKfycbwvsoNhttSdMUbS19VMMctENs5oSQXg8Ar960xWjh9X68SFRpk/exec" >
-              <!-- change the form action to your script url -->
 
               <fieldset class="pure-group">
                 <label for="name">Name: </label>
@@ -65,16 +72,4 @@
               <button class="button-success pure-button button-xlarge">
                 <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
 
-            </form>
-
-            <!-- Customise the Thankyou Message People See when they submit the form: -->
-
-
-            <!-- Submit the Form to Google Using "AJAX" -->
-
-
-
-
-
-
-        <div id="content"></div>
+            </form> -->

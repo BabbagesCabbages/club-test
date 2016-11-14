@@ -5,6 +5,8 @@ module.exports = Marionette.AppRouter.extend({
 
     appRoutes: {
         '(/)': 'index',
+        'screen2': 'screen2',
+        'screen3': 'screen3',
         '*default': 'defaultHandler'
     },
 
